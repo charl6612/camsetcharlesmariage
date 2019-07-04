@@ -1,0 +1,91 @@
+.container-form {
+  margin: 0px auto;
+  width: 450px;
+  border: 0.5px solid #bcbcba;
+  padding: 30px 50px 50px 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+.form-actions {
+  margin-top: 10px;
+  background: rgba(63, 168, 242, 0.7);
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px;
+}
+
+.piscine-btn {
+  margin-top: 8px;
+  background: rgba(63, 168, 242, 0.7);
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px;
+}
+
+.log-in-btn {
+  color: white;
+}
+
+.sign-up-btn {
+  margin-top: 8px;
+  background: rgba(209, 207, 207, 0.7);
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px;
+}
+
+.sign-up-btn:hover {
+  color: $gray;
+}
+
+.sign-up-txt {
+  color: #7a7a79;
+}
+
+.sign-up-txt:hover {
+  color: $gray;
+}
+
+.fg-pwd {
+  margin-top: 5px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.fg-pwd-txt {
+  color: $gray;
+  font-size: 13px;
+}
+
+.form-inputs {
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 600px;
+  }
+  .card{
+    width: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 400px;
+  }
+    .card{
+    width: 300px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+   .card{
+    width: 200px;
+  }
+}
