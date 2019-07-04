@@ -69,23 +69,14 @@
   .container {
     width: 600px;
   }
-  .card{
-    width: 400px;
-  }
 }
 @media (max-width: 720px) {
   .container {
     width: 400px;
   }
-    .card{
-    width: 300px;
-  }
 }
 @media (max-width: 540px) {
   .container {
     width: 300px;
-  }
-   .card{
-    width: 200px;
   }
 }
