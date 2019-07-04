@@ -1,6 +1,11 @@
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+  justify-content: center;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  align-content: center;
+  font-family: montserrat;
 }
 
 .navbar-lewagon .navbar-collapse {

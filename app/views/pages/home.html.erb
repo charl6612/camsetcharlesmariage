@@ -1,2 +1,85 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render 'shared/banner' %>
+
+<div class="card" id="histoire">
+  <div class="card-body">
+    <div class="card-text-bloc">
+      <h1 class="card-title">Histoire</h1>
+      <p class="card-text">
+        <h2>WE ARE GETTING MARRIED (:</h2>
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+        me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your
+        users know a little more about you.
+        <br>
+        <hr>
+      </p>
+      <p class="card-text"><small class="text-muted"></small>
+      </p>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag"ny.JPG" , class: "d-block w-100 mx-auto" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag"cr.JPG" , class: "d-block w-100"%>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag"bl.JPG" , class: "d-block w-100"%>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="card place" id="lemariage">
+    <div class="card-body">
+      <div class="card-text-bloc">
+        <h1 class="card-title">Le mariage</h1>
+        <div class="d-flex justify-content-between">
+          <div class="content">
+            <p class="card-text">
+              <h3>Quand ?</h3>
+              le 22 mai 2020
+            </p>
+          </div>
+
+          <div class="ligne_verticale"></div>
+
+          <div class="content">
+            <p class="card-text">
+              <h3>Lieu</h3>
+              Doucemont
+              Zwartemolenstraat 41, 8951 Heuvelland, Belgique
+            </p>
+          </div>
+
+        </div>
+        <p class="card-text"><small class="text-muted"></small>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card celebrate" id="jeviens">
+    <div class="card-body">
+      <div class="card-text-bloc">
+        <h1 class="card-title">Nous avons hâte de fêter ça avec vous !</h1>
+        <%= link_to 'Je viens !', pages_form_path, :class => "btn btn-outline-dark btn-perso" %>
+      </div>
+    </div>
+
+
+  </div>

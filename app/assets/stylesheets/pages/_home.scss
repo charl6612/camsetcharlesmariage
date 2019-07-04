@@ -1,1 +1,52 @@
 // Specific CSS for your home-page
+.card-img-bottom {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  padding: 150px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border: 0;
+  .card-text-bloc {
+    margin: auto;
+    padding: 0 20% 0 20%;
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    hr {
+      font-weight: bold;
+    }
+  }
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.place {
+  background-color: $gold;
+  h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .content {
+    width: 200px;
+  }
+}
+
+.ligne_verticale {
+  width: 10px;
+  border-left: 1px solid $gray;
+  height: 100px;
+}
+
+.celebrate {
+  width: 50%;
+  margin: auto;
+}
