@@ -1,5 +1,7 @@
 <%= render 'shared/banner' %>
 
+<% if user_signed_in? %>
+
 <div class="card" id="histoire">
   <div class="card-body">
     <div class="card-text-bloc">
@@ -48,16 +50,14 @@
     <div class="card-body">
       <div class="card-text-bloc">
         <h1 class="card-title">Le mariage</h1>
-        <div class="d-flex justify-content-between">
+
+        <div class="inlinebloc">
           <div class="content">
             <p class="card-text">
               <h3>Quand ?</h3>
-              le 22 mai 2020
+              le 23 mai 2020
             </p>
           </div>
-
-          <div class="ligne_verticale"></div>
-
           <div class="content">
             <p class="card-text">
               <h3>Lieu</h3>
@@ -65,11 +65,10 @@
               Zwartemolenstraat 41, 8951 Heuvelland, Belgique
             </p>
           </div>
-
         </div>
-        <p class="card-text"><small class="text-muted"></small>
-        </p>
+
       </div>
+
     </div>
   </div>
 
@@ -80,6 +79,7 @@
         <%= link_to 'Je viens !', pages_form_path, :class => "btn btn-outline-dark btn-perso" %>
       </div>
     </div>
+    <% end %>
 
 
   </div>
