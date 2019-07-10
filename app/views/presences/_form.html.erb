@@ -1,0 +1,19 @@
+<div class="container-form">
+
+  <div class="text-header">
+      <p>Ta présence à notre mariage</p>
+  </div>
+
+  <div class="form-inputs">
+  <%= simple_form_for [@user, @presence] do |f| %>
+  <%= f.input :mariage, as: :radio_buttons %>
+  <%= f.input :nuit_jeudi, as: :radio_buttons %>
+  <%= f.input :nuit_vendredi, as: :radio_buttons %>
+  <%= f.input :nuit_samedi, as: :radio_buttons %>
+
+      <%= f.button :submit, "Valider", class: "btn-outline-dark btn-perso" %>
+
+  <% end %>
+
+  </div>
+</div>

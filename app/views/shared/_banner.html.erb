@@ -3,6 +3,9 @@
   <div class="bloc">
     <h1> <strong>Camille</strong> & <strong>Charles</strong></h1>
     <h3>le 23 mai 2020</h3>
-    <%= link_to 'Je viens !', pages_form_path, :class => "btn btn-outline-dark btn-perso" %>
+    <% if user_signed_in? %>
+    <%= link_to 'Je viens !', new_user_presence_path(current_user), :class => "btn btn-outline-dark btn-perso" %>
+  <% end %>
+
   </div>
 </div>
