@@ -5,12 +5,17 @@
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
+@import "simple_form_bootstrap/simple_form-bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body{
+  background-color: white;
+}
 
 h2{
   color: $gold;
