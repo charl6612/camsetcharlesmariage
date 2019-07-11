@@ -12,7 +12,8 @@
                     label: "Email",
                     required: true,
                     autofocus: true,
-                    input_html: { autocomplete: "email" }%>
+                    input_html: { autocomplete: "email" },
+                    prepend: "@" %>
         <%= f.input :first_name,
                     label: "Prénom",
                     required: true,
@@ -23,7 +24,7 @@
                     required: true,
                     autofocus: true,
                     input_html: { autocomplete: "last_name" }%>
-          <%= f.input :families,
+          <%= f.input :family,
                     label: "families",
                     required: true,
                     autofocus: true,
