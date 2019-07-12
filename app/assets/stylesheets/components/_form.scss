@@ -1,6 +1,5 @@
 .container-form {
   margin: 0px auto;
-  width: 450px;
   border: 0.5px solid #bcbcba;
   padding: 30px 50px 50px 50px;
   margin-top: 40px;
@@ -62,20 +61,4 @@
 .form-inputs {
   margin-top: 13px;
   font-size: 15px;
-}
-
-@media (max-width: 960px) {
-  .container {
-    width: 600px;
-  }
-}
-@media (max-width: 720px) {
-  .container {
-    width: 400px;
-  }
-}
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
-  }
 }

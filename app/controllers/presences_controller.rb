@@ -1,8 +1,11 @@
 class PresencesController < ApplicationController
   def new
     @user = User.find(params[:user_id])
-    @presence = Presence.new
-
+    if @user.presence
+      edit
+    else
+      @presence = Presence.new
+    end
   end
 
   def create
@@ -15,6 +18,23 @@ class PresencesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit # GET /articles/:id/edit
+    @user = User.find(params[:user_id])
+    @presence = @user.presence
+  end
+
+  def update
+    @presence = Presence.find(params[:id])
+    @presence.update(presence_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    @presence = Presence.find(params[:id])
+    @presence.destroy
+    redirect_to root_path
   end
 
   private
