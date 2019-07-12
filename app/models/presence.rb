@@ -1,7 +1,9 @@
 class Presence < ApplicationRecord
   belongs_to :user
-  validates :nuit_jeudi, presence: true
-  validates :nuit_samedi, presence: true
-  validates :nuit_vendredi, presence: true
-  validates :mariage, presence: true
+  validates :user_id, uniqueness: { scope: :user_id }
+  validates :mariage, inclusion: { in: [ true, false ] }
+  validates :nuit_jeudi, inclusion: { in: [ true, false ] }
+  validates :nuit_vendredi, inclusion: { in: [ true, false ] }
+  validates :nuit_samedi, inclusion: { in: [ true, false ] }
+
 end
