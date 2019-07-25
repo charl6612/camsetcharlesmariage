@@ -21,8 +21,10 @@
           } do |f| %>
           <%= f.error_notification %>
           <%= f.input :mariage, as: :radio_buttons%>
+          <% if current_user.allowedbefore == true %>
           <%= f.input :nuit_jeudi, as: :radio_buttons %>
           <%= f.input :nuit_vendredi, as: :radio_buttons %>
+          <% end %>
           <%= f.input :nuit_samedi, as: :radio_buttons %>
         </div>
       </div>
