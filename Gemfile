@@ -16,11 +16,12 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'open-iconic-rails'
+# gem "omniauth-rails_csrf_protection"
 
-'spotify'
-gem 'rspotify'
-gem 'rack-cors'
-gem 'active_model_serializers'
+# 'spotify'
+# gem 'rspotify'
+# gem 'rack-cors'
+# gem 'active_model_serializers'
 
 
 group :development do

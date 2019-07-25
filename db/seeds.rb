@@ -1,3 +1,4 @@
+Presence.delete_all
 User.delete_all
 Family.delete_all
 
@@ -27,3 +28,23 @@ user = User.create(
   password:"password",
   family: f,
 )
+
+require 'csv'
+
+csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
+filepath    = '/home/charles/code/charl6612/camsetcharlesmariage/db/mariage - invite_avant.csv'
+
+CSV.foreach(filepath, csv_options) do |row|
+
+  user = User.create(
+    email: "#{row['email']}",
+    first_name: "#{row['first_name']}",
+    last_name: "#{row['last_name']}",
+    password:"#{row['password']}",
+    temoin:"#{row['temoin']}",    
+    allowedbefore:"#{row['allowedbefore']}",
+    family: f,
+  )
+end
+
+
