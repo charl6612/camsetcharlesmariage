@@ -17,6 +17,12 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'open-iconic-rails'
 
+'spotify'
+gem 'rspotify'
+gem 'rack-cors'
+gem 'active_model_serializers'
+
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
