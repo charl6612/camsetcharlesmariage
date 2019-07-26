@@ -7,7 +7,7 @@
       <div class="col-12 col-sm-6 col-md-8 text-center">
 
         <div class="form-inputs">
-          <%= simple_form_for [@user, @presence],
+          <%= simple_form_for [@invite, @presence],
           wrapper: :horizontal_form,
           wrapper_mappings: {
             boolean:       :horizontal_boolean,
@@ -20,11 +20,6 @@
             time:          :horizontal_multi_select
           } do |f| %>
           <%= f.error_notification %>
-          <%= f.input :mariage, as: :radio_buttons%>
-          <% if current_user.allowedbefore == true %>
-          <%= f.input :nuit_jeudi, as: :radio_buttons %>
-          <%= f.input :nuit_vendredi, as: :radio_buttons %>
-          <% end %>
           <%= f.input :nuit_samedi, as: :radio_buttons %>
         </div>
       </div>
