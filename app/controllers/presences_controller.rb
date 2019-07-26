@@ -1,7 +1,7 @@
 class PresencesController < ApplicationController
   def new
-    @user = User.find(params[:user_id])
-    if @user.presence
+    @invite = Invite.find(params[:invite_id])
+    if @invite.presence
       edit
     else
       @presence = Presence.new
@@ -9,10 +9,10 @@ class PresencesController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @invite = Invite.find(params[:invite_id])
     @presence = Presence.new(presence_params)
-    @presence.user = User.find(params[:user_id])
-    @presence.user = current_user
+    @presence.invite = Invite.find(params[:invite_id])
+    @presence.invite = current_invite
     if @presence.save
       redirect_to root_path
     else
@@ -21,8 +21,8 @@ class PresencesController < ApplicationController
   end
 
   def edit # GET /articles/:id/edit
-    @user = User.find(params[:user_id])
-    @presence = @user.presence
+    @invite = Invite.find(params[:invite_id])
+    @presence = @invite.presence
   end
 
   def update
