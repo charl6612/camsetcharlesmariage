@@ -1,13 +1,5 @@
 <div class="row">
   <div class="col-12 align-self-center">
-
-    <% if current_user.presence.nil? %>
     <%= link_to 'Je viens !', new_user_presence_path(current_user), :class => "btn btn-outline-dark btn-perso" %>
-
-    <% else %>
-
-    <%= link_to 'Je viens !', edit_user_presence_path(current_user, current_user.presence), :class => "btn btn-outline-dark btn-perso" %>
-
-    <% end %>
   </div>
 </div>
