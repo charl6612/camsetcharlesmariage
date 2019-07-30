@@ -17,7 +17,6 @@ class InvitesController < ApplicationController
     @user = User.find(params[:user_id])
     @invite = Invite.new(invite_params)
     @invite.user = current_user
-    binding.pry
     if @invite.save
       redirect_to new_user_invite_presence_path(@user, @invite)
     else
