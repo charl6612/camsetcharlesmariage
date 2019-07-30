@@ -1,42 +1,52 @@
 class PresencesController < ApplicationController
-  def new
-    @user = User.find(params[:user_id])
-    if @invite.presence
-      edit
-    else
-      @presence = Presence.new
-    end
+  def index         # GET /restaurants
+    @invite =  Invite.find(params[:id])
+    @user =  User.find(params[:id])
+    @presences = Presence.all
   end
 
-  def create
+  def show          # GET /Presences/:id
+    @invite =  Invite.find(params[:invite_id])
+    @user =  User.find(params[:user_id])
+    @presence = @invite.presence
+  end
+
+  def new
+    @invite =  Invite.find(params[:invite_id])
+    @user =  User.find(params[:user_id])
+    @presence = Presence.new
+  end
+
+  def create        # POST /Presences
     @presence = Presence.new(presence_params)
-    @presence.invite = Invite.find(params[:presence][:invite])
+    @invite =  Invite.find(params[:invite_id])
+    @user =  User.find(params[:user_id])
+    @presence.invite = @invite
     if @presence.save
-      redirect_to root_path()
+      redirect_to user_invites_path(current_user)
     else
       render :new
     end
   end
 
   def edit          # GET /articles/:id/edit
+    @invite =  Invite.find(params[:invite_id])
+    @user =  User.find(params[:user_id])
     @presence = Presence.find(params[:id])
-    @invite = @presence.invite
-    @user = current_user
   end
 
   def update
+    @invite =  Invite.find(params[:invite_id])
+    @user =  User.find(params[:user_id])
     @presence = Presence.find(params[:id])
-    @invite = @presence.invite
-    @user = current_user
-
     @presence.update(presence_params)
-    redirect_to root_path()
+    redirect_to user_invites_path(current_user)
   end
 
   def destroy
     @presence = Presence.find(params[:id])
     @presence.destroy
-    redirect_to root_path()
+    redirect_to user_invites_path(current_user)
   end
 
   private

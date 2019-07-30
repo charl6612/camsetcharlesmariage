@@ -2,13 +2,12 @@
   <div class="container-form">
     <div class="row justify-content-md-center">
       <div class="col-12 align-items-center">
-        <h2>La présence de notre mariage</h2>
+        <h2>La présence <%= @invite.first_name %> à notre mariage</h2>
       </div>
       <div class="col-12 col-sm-6 col-md-8 text-center">
-          <% @user.invites.each do |i| %>
-                  <div class="form-inputs">
+        <div class="form-inputs">
 
-          <%= simple_form_for [@user, @presence],
+          <%= simple_form_for [@user, @invite, @presence],
                 wrapper: :horizontal_form,
                 wrapper_mappings: {
                   boolean:       :horizontal_boolean,
@@ -20,27 +19,24 @@
                   range:         :horizontal_range,
                   time:          :horizontal_multi_select
                 } do |f| %>
-          <h3>La présence <%= i.first_name %> à notre mariage</h3>
-
           <%= f.error_notification %>
-          <%= f.input_field :invite, as: :hidden, value: i.id %>
-          <%= f.input :nuit_samedi, label: "presence nuit du samedi#{i.id}", as: :radio_buttons, input_html: { value: `#{i.id}` } %>
+          <%= f.input_field :invite, as: :hidden, value: @invite.id %>
+          <%= f.input :nuit_samedi, label: "presence nuit du samedi#{@invite.id}", as: :radio_buttons, input_html: { value: `#{@invite.id}` } %>
           <%= f.input :mariage, as: :radio_buttons %>
-          <% if i.allowedbefore == true %>
+          <% if @invite.allowedbefore == true %>
           <%= f.input :nuit_jeudi, as: :radio_buttons %>
           <%= f.input :nuit_vendredi, as: :radio_buttons %>
           <% end %>
           <div class="col-12 text-center">
             <%= f.button :submit, class: "btn-outline-dark btn-perso" %>
-            <% end %>
           </div>
 
-    </div>
-    <% end %>
-  </div>
-  <%= render 'shared/button_home' %>
+        </div>
+        <% end %>
+      </div>
+      <%= render 'shared/button_home' %>
 
-</div>
-</div>
+    </div>
+  </div>
 
 </div>
