@@ -1,7 +1,7 @@
 class InvitesController < ApplicationController
   def index         # GET /restaurants
     @user = User.find(params[:user_id])
-    @invite = Invite.all
+    @invites = @user.invites
   end
 
   def show          # GET /Invites/:id
@@ -18,7 +18,8 @@ class InvitesController < ApplicationController
     @invite = Invite.new(invite_params)
     @invite.user = current_user
     if @invite.save
-      redirect_to root_path
+      redirect_to new_user_invite_presence_path(@user,@invite)
+
     else
       render :new
     end
@@ -32,13 +33,13 @@ class InvitesController < ApplicationController
   def update
     @invite = Invite.find(params[:id])
     @invite.update(Invite_params)
-    redirect_to root_path
+    redirect_to user_invites_path(current_user)
   end
 
   def destroy
     @invite = Invite.find(params[:id])
     @invite.destroy
-    redirect_to root_path
+    redirect_to user_invites_path(current_user)
   end
 
 

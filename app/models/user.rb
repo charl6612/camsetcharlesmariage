@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :children
   has_many :invites
+  has_many :presences, through: :invites
 end

@@ -1,6 +1,6 @@
 Presence.delete_all
-User.delete_all
 Invite.delete_all
+User.delete_all
 
 puts 'creating user 1'
 
@@ -10,8 +10,7 @@ user1 = User.create(
 )
 
 puts 'creating invite'
-
-user = Invite.create(
+invit = Invite.create(
   email: "camille@gmail.com",
   first_name: "camille",
   last_name: "delannoy",
@@ -19,6 +18,19 @@ user = Invite.create(
   temoin: false,
   user: user1,
 )
+
+puts invit.valid?
+
+invit2 = Invite.create(
+  email: "gaspard@gmail.com",
+  first_name: "gaspard",
+  last_name: "delannoy",
+  allowedbefore: false,
+  temoin: false,
+  user: user1,
+)
+puts invit2.valid?
+
 
 # require 'csv'
 
