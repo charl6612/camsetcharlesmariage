@@ -1,5 +1,5 @@
 class InvitesController < ApplicationController
-  def index         # GET /restaurants
+  def index
     @user = User.find(params[:user_id])
     @invites = @user.invites
   end
@@ -17,9 +17,9 @@ class InvitesController < ApplicationController
     @user = User.find(params[:user_id])
     @invite = Invite.new(invite_params)
     @invite.user = current_user
+    binding.pry
     if @invite.save
-      redirect_to new_user_invite_presence_path(@user,@invite)
-
+      redirect_to new_user_invite_presence_path(@user, @invite)
     else
       render :new
     end
@@ -33,7 +33,8 @@ class InvitesController < ApplicationController
   def update
     @invite = Invite.find(params[:id])
     @invite.update(Invite_params)
-    redirect_to user_invites_path(current_user)
+    @user = User.find(params[:user_id])
+    redirect_to user_invites_path(@user)
   end
 
   def destroy
@@ -42,11 +43,9 @@ class InvitesController < ApplicationController
     redirect_to user_invites_path(current_user)
   end
 
-
   private
 
   def invite_params
-    params.require(:invite).permit(:first_name, :last_name, :email, :temoin, :allowedbefore, :user)
+    params.require(:invite).permit(:first_name, :last_name, :email, :temoin, :allowedbefore, :user, :child)
   end
-
 end

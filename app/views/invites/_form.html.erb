@@ -2,7 +2,7 @@
   <div class="container-form">
     <div class="row justify-content-md-center">
       <div class="col-12 align-items-center">
-        <h2>Ta présence à notre mariage</h2>
+        <h2>Welcome</h2>
       </div>
       <div class="col-12 col-sm-6 col-md-8 text-center">
 
@@ -20,11 +20,10 @@
             time:          :horizontal_multi_select
           } do |f| %>
           <%= f.error_notification %>
-          <%= f.input :first_name%>
-          <%= f.input :last_name%>
-          <%= f.input :email%>
-
-
+          <%= f.input :first_name, label: "Prénom", required: true%>
+          <%= f.input :last_name, label: "Nom", required: true%>
+          <%= f.input :email, required: false%>
+          <%= f.input :child, label: "Est-ce un enfant ?", as: :radio_buttons, required: false%>
           <div class="col-12 text-center">
             <%= f.button :submit, class: "btn-outline-dark btn-perso" %>
             <% end %>

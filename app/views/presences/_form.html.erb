@@ -2,7 +2,7 @@
   <div class="container-form">
     <div class="row justify-content-md-center">
       <div class="col-12 align-items-center">
-        <h2>La présence <%= @invite.first_name %> à notre mariage</h2>
+      <h2>La présence de <%= @invite.first_name.capitalize %> à notre mariage</h2>
       </div>
       <div class="col-12 col-sm-6 col-md-8 text-center">
         <div class="form-inputs">
@@ -20,22 +20,17 @@
                   time:          :horizontal_multi_select
                 } do |f| %>
           <%= f.error_notification %>
-          <%= f.input_field :invite, as: :hidden, value: @invite.id %>
-          <%= f.input :nuit_samedi, label: "presence nuit du samedi#{@invite.id}", as: :radio_buttons, input_html: { value: `#{@invite.id}` } %>
-          <%= f.input :mariage, as: :radio_buttons %>
+          <%= f.input :mariage,label: "presence mariage (samedi soir)", as: :radio_buttons, error: 'obligatoire' %>
+          <%= f.input :nuit_samedi, label: "presence nuit du samedi(nuit dans le gîte)", as: :radio_buttons, error: 'obligatoire'%>
           <% if @invite.allowedbefore == true %>
-          <%= f.input :nuit_jeudi, as: :radio_buttons %>
-          <%= f.input :nuit_vendredi, as: :radio_buttons %>
+          <%= f.input :nuit_jeudi, label:  "presence nuit du jeudi (nuit dans le gîte)", as: :radio_buttons %>
+          <%= f.input :nuit_vendredi, label:  "presence nuit du vendredi (nuit dans le gîte)", as: :radio_buttons %>
           <% end %>
-          <div class="col-12 text-center">
             <%= f.button :submit, class: "btn-outline-dark btn-perso" %>
-          </div>
 
         </div>
         <% end %>
       </div>
-      <%= render 'shared/button_home' %>
-
     </div>
   </div>
 

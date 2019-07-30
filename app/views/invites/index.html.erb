@@ -1,32 +1,14 @@
 <div class="container">
-  <div class="container-form">
-    <div class="row justify-content-md-center">
-      <div class="col-12 col-sm-6 col-md-8 text-center">
-        <% @user.invites.each do |inv| %>
-        <div class="form-inputs">
-          <h2>La présence de <%= inv.first_name.capitalize %> à notre mariage</h2>
-          <% if inv.presence %>
-          <div class="row">
-            <div class="col-12 align-self-center">
-              <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
-              <%= link_to 'edit', edit_user_invite_presence_path(current_user,inv, inv.presence), :class => "btn btn-outline-dark btn-perso" %>
-            </div>
-          </div>
-          <% else %>
-          <div class="row">
-            <div class="col-12 align-self-center">
-              <%= link_to 'new !', new_user_invite_presence_path(current_user,inv, inv.presence), :class => "btn btn-outline-dark btn-perso" %>
-            </div>
-          </div>
-          <% end %>
-          <%= link_to 'Destroy',  user_invite_path(current_user,inv),  method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-outline-dark btn-perso"  %>
-          <% end %>
-        </div>
-      </div>
-      <div class="col-12 align-self-center">
-        <%= link_to 'new !', new_user_invite_path(current_user), :class => "btn btn-outline-dark btn-perso" %>
-      </div>
-    </div>
+  <h2>Welcome</h2>
+  <div class="cards">
+    <% @invites.each do |inv| %>
+    <% if inv.presence %>
+    <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
+    <% end %>
+    <% end %>
   </div>
-
+  <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+    <%= link_to 'Nouvel invité', new_user_invite_path(current_user), class: "btn btn-primary mb-3"%>
+    <%= link_to 'home', root_path(), class: "btn btn-outline-dark btn-perso"%>
+  </div>
 </div>
