@@ -1,5 +1,5 @@
 // Specific CSS for your home-page
-.card-img-bottom {
+.card-home-img-bottom {
   height: 180px;
   width: 100%;
   background-size: cover;
@@ -8,9 +8,9 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.card {
+.card-home {
   border: 0;
-  .card-text-bloc {
+  .card-home-text-bloc {
     margin: auto;
     padding: 0 20% 0 20%;
     text-align: center;

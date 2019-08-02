@@ -1,11 +1,12 @@
-<div class="banner" id="home">
-  <%= render 'shared/navbar' %>
-  <div class="bloc">
-    <h1> <strong>Camille</strong> & <strong>Charles</strong></h1>
-    <h3>le 23 mai 2020</h3>
-    <% if user_signed_in? %>
-  <%= render 'shared/button_coming' %>
-  <% end %>
-
-  </div>
-</div>
+    <div class="banner" id="home">
+      <div class="bloc">
+        <h1> <strong>Camille</strong> & <strong>Charles</strong></h1>
+        <h2>le 23 mai 2020 <br>
+        J - <%= (Date.parse("23/05/2020") - Date.today).to_i %>
+        </h2>
+        
+        <% if user_signed_in? %>
+        <% end %>
+      </div>
+      <%= render 'shared/navbar' %>
+    </div>
