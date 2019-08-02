@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'open-iconic-rails'
+gem 'cloudinary', '~> 1.9.1'
 # gem "omniauth-rails_csrf_protection"
 
 # 'spotify'
