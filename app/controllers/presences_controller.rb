@@ -15,6 +15,8 @@ class PresencesController < ApplicationController
     @invite =  Invite.find(params[:invite_id])
     @user =  User.find(params[:user_id])
     @presence = Presence.new
+    @presence.nuit_samedi = false
+    @presence.mariage = false
   end
 
   def create        # POST /Presences
