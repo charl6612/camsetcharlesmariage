@@ -121,5 +121,5 @@ vincent@gmail.com,password,Vincent,noppe,famille charles,FALSE,FALSE,FALSE,Vince
 vincent@gmail.com,password,copine vincent,vincent,famille charles,FALSE,FALSE,FALSE,copine vincent.vincent@test.com
 vincienne@gmail.com,password,Vincienne,gons,famille charles,FALSE,FALSE,FALSE,Vincienne.gons@test.com
 vincienne@gmail.com,password,Christophe,vincienne,famille charles,FALSE,FALSE,FALSE,Christophe.vincienne@test.com
-charles@gmail.com,password,charles,noppe,famille charles,TRUE,TRUE,,noppe.charles@gmail.com
-charles@gmail.com,password,camille,delannoy,famille charles,TRUE,TRUE,,camille.delannoy12@gmail.com
+charles@gmail.com,password,charles,noppe,famille charles,TRUE,TRUE,FALSE,noppe.charles@gmail.com
+charles@gmail.com,password,camille,delannoy,famille charles,TRUE,TRUE,FALSE,camille.delannoy12@gmail.com
