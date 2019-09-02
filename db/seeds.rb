@@ -29,7 +29,7 @@ puts "import csv"
 require 'csv'
 
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
-filepath    = '/home/charles/code/charl6612/camsetcharlesmariage/lib/mariage - liste_full.csv'
+filepath    = './lib/mariage - liste_full.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
 
