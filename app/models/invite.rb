@@ -8,4 +8,5 @@ class Invite < ApplicationRecord
     first_name.capitalize!
     last_name.capitalize!
   end
+
 end
