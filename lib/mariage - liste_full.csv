@@ -33,6 +33,8 @@ chacha@gmail.com,password,Julien,Farez,amis,FALSE,TRUE,FALSE,Julien.Farez@test.c
 chacha@gmail.com,password,Octave,Farez,enfant,FALSE,FALSE,TRUE,Octave.Farez@test.com
 charles@gmail.com,password,Basile,noppe,enfant,FALSE,FALSE,TRUE,Basile.noppe@test.com
 charles@gmail.com,password,Gaspard,noppe,enfant,FALSE,FALSE,TRUE,Gaspard.noppe@test.com
+charles@gmail.com,password,charles,noppe,famille charles,TRUE,TRUE,FALSE,noppe.charles@gmail.com
+charles@gmail.com,password,camille,delannoy,famille charles,TRUE,TRUE,FALSE,camille.delannoy12@gmail.com
 clemence@gmail.com,password,Clémence,noppe,famille charles,FALSE,FALSE,FALSE,Clémence.noppe@test.com
 coco@gmail.com,password,Coco,Coco,amis,FALSE,FALSE,FALSE,Coco.Coco@test.com
 coline@gmail.com,password,Coline,Carpentier,amis,FALSE,TRUE,FALSE,Coline.Carpentier@test.com
@@ -121,5 +123,3 @@ vincent@gmail.com,password,Vincent,noppe,famille charles,FALSE,FALSE,FALSE,Vince
 vincent@gmail.com,password,copine vincent,vincent,famille charles,FALSE,FALSE,FALSE,copine vincent.vincent@test.com
 vincienne@gmail.com,password,Vincienne,gons,famille charles,FALSE,FALSE,FALSE,Vincienne.gons@test.com
 vincienne@gmail.com,password,Christophe,vincienne,famille charles,FALSE,FALSE,FALSE,Christophe.vincienne@test.com
-charles@gmail.com,password,charles,noppe,famille charles,TRUE,TRUE,FALSE,noppe.charles@gmail.com
-charles@gmail.com,password,camille,delannoy,famille charles,TRUE,TRUE,FALSE,camille.delannoy12@gmail.com
