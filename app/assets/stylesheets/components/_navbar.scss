@@ -1,8 +1,6 @@
 .navbar {
   justify-content: center;
   background: transparent;
-  position: absolute;
-  bottom: 80px;
   width: 100%;
   align-content: center;
   font-family: montserrat;
@@ -11,7 +9,6 @@
 .navbar-expand-lg {
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,4 +17,8 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: center;
 }

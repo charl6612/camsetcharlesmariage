@@ -1,85 +1,75 @@
 <%= render 'shared/banner' %>
-
-<% if user_signed_in? %>
-
-<div class="card-home" id="histoire">
-  <div class="card-home-body">
-    <div class="card-home-text-bloc">
-      <h1 class="card-home-title">Histoire</h1>
-      <p class="card-home-text">
-        <h2>WE ARE GETTING MARRIED (:</h2>
-        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
-        me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your
-        users know a little more about you.
-        <br>
-        <hr>
-      </p>
-      <p class="card-home-text"><small class="text-muted"></small>
-      </p>
-    </div>
-  </div>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag"ny.JPG" , class: "d-block w-100" %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag"cr.JPG" , class: "d-block w-100"%>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag"bl.JPG" , class: "d-block w-100"%>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <div class="card-home place" id="lemariage">
-    <div class="card-home-body">
-      <div class="card-home-text-bloc">
-        <h1 class="card-home-title">Le mariage</h1>
-
-        <div class="inlinebloc">
-          <div class="content">
+    <% if user_signed_in? %>
+      <div class="card-home" id="histoire">
+        <div class="card-home-body">
+          <div class="card-home-text-bloc">
+            <h1 class="card-home-title">Histoire</h1>
             <p class="card-home-text">
-              <h3>Quand ?</h3>
-              le 23 mai 2020
+              <h2>WE ARE GETTING MARRIED (:</h2>
+              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+              me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your
+              users know a little more about you.
+              <br>
+              <hr>
             </p>
-          </div>
-          <div class="content">
-            <p class="card-home-text">
-              <h3>Lieu</h3>
-              Doucemont
-              Zwartemolenstraat 41, 8951 Heuvelland, Belgique
+            <p class="card-home-text"><small class="text-muted"></small>
             </p>
           </div>
         </div>
-
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= cl_image_tag("bl_psrun1.jpg", aspect_ratio: "16:9", effect: "sharpen", gravity: "auto", height: 400, width: 1000, crop: "fill", class: "d-block w-100") %>
+            </div>
+            <div class="carousel-item">
+              <%= cl_image_tag("cr_uh42sy.jpg", aspect_ratio: "16:9", effect: "sharpen", gravity: "auto", height: 400, width: 1000, crop: "fill", class: "d-block w-100") %>
+            </div>
+            <div class="carousel-item">
+              <%= cl_image_tag("ny_jwnlqr.jpg", aspect_ratio: "16:9", effect: "sharpen", gravity: "auto", height: 400, width: 1000, crop: "fill", class: "d-block w-100") %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="card-home place" id="lemariage">
+          <div class="card-home-body">
+            <div class="card-home-text-bloc">
+              <h1 class="card-home-title">Le mariage</h1>
+              <div class="inlinebloc">
+                <div class="content">
+                  <p class="card-home-text">
+                    <h3>Quand ?</h3>
+                    le 23 mai 2020
+                  </p>
+                </div>
+                <div class="content">
+                  <p class="card-home-text">
+                    <h3>Lieu</h3>
+                    Doucemont
+                    Zwartemolenstraat 41, 8951 Heuvelland, Belgique
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-home celebrate" id="jeviens">
+          <div class="card-home-body">
+            <div class="card-home-text-bloc">
+              <h1 class="card-home-title">Nous avons hâte de fêter ça avec vous !</h1>
+              <%= render 'shared/button_coming' %>
+            </div>
+          </div>
+        <% end %>
       </div>
-
-    </div>
-  </div>
-
-  <div class="card-home celebrate" id="jeviens">
-    <div class="card-home-body">
-      <div class="card-home-text-bloc">
-        <h1 class="card-home-title">Nous avons hâte de fêter ça avec vous !</h1>
-  <%= render 'shared/button_coming' %>
-      </div>
-    </div>
-    <% end %>
-
-
-  </div>
