@@ -1,9 +1,15 @@
-.btn-perso{
-  border-width: 4px;
-  border: solid;
-  padding: 10px 30px;
-  min-height: 44px;
+.btn-ghost {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
 
-.trash{
+.btn-ghost:hover {
+  opacity: 1;
+  background-color:whitesmoke;
+  transition: 0.5s;
 }

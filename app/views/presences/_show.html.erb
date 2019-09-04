@@ -1,15 +1,12 @@
-    
-    <div class="card">
-      <div class="card-marges">
-        <h2 class="card-header"><%= invite.first_name.upcase %>
-          EST INVITE(E)
-          <% if invite.child == true %>
-            <i class="fas fa-baby"></i>
-          <% end %>
-        </h2>
-        <%= link_to '',  user_invite_path(user,invite),  method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-suppr fas fa-user-times" %>
-        <div class="card-body">
-          <h5 class="card-title">PRESENCE AU MARIAGE</h5>
+    <div class="card border-success mb-3">
+      <div class="card-header bg-transparent border-success"><%= invite.first_name.upcase %>
+        EST INVITE(E)
+        <% if invite.child == true %>
+          <i class="fas fa-baby"></i>
+        <% end %></div>
+      <div class="card-body text-success">
+        <h5 class="card-title">PRESENCE AU MARIAGE</h5>
+        <p class="card-text">
           <%= simple_form_for [user, invite, presence],
       wrapper: :horizontal_form,
       wrapper_mappings: {
@@ -24,15 +21,16 @@
       } do |f| %>
             <%= f.error_notification %>
             <h5>
-            <%= f.input :mariage,label: "Soirée mariage", as: :radio_buttons%>
-            <%= f.input :nuit_samedi, label: "Nuit du samedi", as: :radio_buttons%>
-            <% if invite.allowedbefore == true %>
-              <%= f.input :nuit_jeudi, label:  "Nuit du jeudi", as: :radio_buttons %>
-              <%= f.input :nuit_vendredi, label:  "Nuit du vendredi", as: :radio_buttons %>
-            <% end %>
-            </h5>
+              <% if invite.allowedbefore == true %>
+                <%= f.input :nuit_jeudi, label:  "Nuit du jeudi", as: :radio_buttons %>
+                <%= f.input :nuit_vendredi, label:  "Nuit du vendredi", as: :radio_buttons %>
+              <% end %>
+              <%= f.input :mariage,label: "Soirée mariage", as: :radio_buttons%>
+              <%= f.input :nuit_samedi, label: "Nuit du samedi", as: :radio_buttons%>
+            </p>
           </div>
-          <%= f.button :submit, class: "btn-outline-dark mb-3" %>
-        <% end %>
+          <div class="card-footer bg-transparent border-success">
+            <%= f.button :submit, class: "btn-outline-dark mb-3" %>
+          <% end %>
+        </div>
       </div>
-    </div>

@@ -1,0 +1,15 @@
+<div class="banner2">
+  <div class="container">
+    <h1>Camille & Charles</h1>
+    <% if user_signed_in? %>
+    <h3>23.05.2020</h3>
+    <h2>
+      <i class="far fa-clock"></i>
+      J - <%= (Date.parse("23/05/2020") - Date.today).to_i %>
+      <%= render 'shared/button_coming' %>
+      <% else %>
+      <%= link_to "Login", new_user_session_path, class: "btn btn-ghost" %>
+      <% end %>
+    </h2>
+  </div>
+</div>
