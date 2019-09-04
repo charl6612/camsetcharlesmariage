@@ -1,15 +1,14 @@
-<div class="container">
-  <h2>Welcome</h2>
-  <div class="cards">
-    <% @invites.each do |inv| %>
-    <% if inv.presence %>
-    <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
-    <% end %>
-    <% end %>
-  </div>
-  <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
-    <%= link_to '', new_user_invite_path(current_user), class: "btn btn-primary mb-3 fas fa-user-plus"%>
-    <%= link_to 'home', root_path(), class: "btn btn-outline-dark btn-perso"%>
-  </div>
-</div>
-
+    
+    <div class="container">
+      <h2>MA TEAM</h2>
+      <div class="card-deck">
+        <% @invites.each do |inv| %>
+          <% if inv.presence %>
+            <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+        <%= link_to 'home', root_path(), class: "btn btn btn-ghost"%>
+      </div>
+    </div>

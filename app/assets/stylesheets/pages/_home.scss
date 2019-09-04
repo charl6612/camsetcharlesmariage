@@ -12,7 +12,7 @@
   border: 0;
   .card-home-text-bloc {
     margin: auto;
-    padding: 0 20% 0 20%;
+    padding: 5% 20% 5% 20%;
     text-align: center;
     h1 {
       font-weight: bold;
@@ -22,10 +22,6 @@
       font-weight: bold;
     }
   }
-}
-
-.carousel-item {
-  height: 400px;
 }
 
 .place {
@@ -40,13 +36,10 @@
   }
 }
 
-
-
 .celebrate {
   width: 100%;
   margin: auto;
 }
-
 
 .inlinebloc {
   display: grid;

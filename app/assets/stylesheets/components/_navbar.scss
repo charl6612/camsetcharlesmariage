@@ -1,10 +1,12 @@
 .navbar {
-  justify-content: center;
-  background: transparent;
-  width: 100%;
-  align-content: center;
   font-family: montserrat;
+  position: absolute;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+  .btn-ghost{
+    border: none;
+  }
 }
+
 
 .navbar-expand-lg {
   flex-direction: row;
@@ -19,6 +21,6 @@
   width: 40px;
 }
 
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse {
   justify-content: center;
 }
