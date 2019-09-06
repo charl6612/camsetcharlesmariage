@@ -7,13 +7,13 @@
         <ul class="navbar-nav">
           <% if user_signed_in? %>
             <li class="nav-item">
-              <a class="btn btn-ghost" href="#Histoire">Histoire <span class="sr-only">(current)</span></a>
+              <a class="btn btn-ghost" href="/#histoire">Histoire <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-ghost" href="#lemariage">Le mariage</a>
+              <a class="btn btn-ghost" href="/#lemariage">Le mariage</a>
             </li>
             <li class="nav-item">
-              <%= link_to 'Je viens !', user_invites_path(current_user), :class => "btn btn-ghost" %>
+              <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "btn btn-ghost" %>
             </li>
             <li class="nav-item">
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-ghost" %>
