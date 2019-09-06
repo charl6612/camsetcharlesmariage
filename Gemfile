@@ -19,6 +19,9 @@ gem 'open-iconic-rails'
 gem 'cloudinary', '~> 1.9.1'
 gem 'materialize-sass'
 gem 'material_icons'
+gem 'geocoder'
+gem 'gmaps4rails'
+
 
 # gem "omniauth-rails_csrf_protection"
 
