@@ -17,11 +17,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'open-iconic-rails'
 gem 'cloudinary', '~> 1.9.1'
-gem 'materialize-sass'
-gem 'material_icons'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'letter_opener'
 
 # gem "omniauth-rails_csrf_protection"
 
@@ -42,5 +40,4 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
-  gem 'letter_opener'
 end
