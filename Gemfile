@@ -21,7 +21,7 @@ gem 'materialize-sass'
 gem 'material_icons'
 gem 'geocoder'
 gem 'gmaps4rails'
-
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # gem "omniauth-rails_csrf_protection"
 
