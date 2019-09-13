@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
   get 'contact/new'
   devise_for :users
   root to: 'pages#home'
-  get 'contact-me', to: 'messages#new', as: 'new_message'
-  post 'contact-me', to: 'messages#create', as: 'create_message'
   resources :contacts, only: [:new, :create]
 
 

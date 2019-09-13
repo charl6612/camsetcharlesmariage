@@ -20,6 +20,7 @@ gem 'cloudinary', '~> 1.9.1'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'letter_opener'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # gem "omniauth-rails_csrf_protection"
 
