@@ -99,6 +99,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    mail_form (1.8.0)
+      actionmailer (>= 5.0)
+      activemodel (>= 5.0)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     material_icons (2.2.1)
@@ -237,6 +240,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   letter_opener
   listen (~> 3.0.5)
+  mail_form (~> 1.5, >= 1.5.1)
   material_icons
   materialize-sass
   open-iconic-rails
