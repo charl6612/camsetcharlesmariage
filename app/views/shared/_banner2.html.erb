@@ -6,7 +6,7 @@
     <h2>
       <i class="far fa-clock"></i>
       J - <%= (Date.parse("23/05/2020") - Date.today).to_i %>
-      <%= render 'shared/button_coming' %>
+      <%= render 'shared/button_home' %>
       <% else %>
       <%= link_to "Login", new_user_session_path, class: "btn btn-ghost" %>
       <% end %>
