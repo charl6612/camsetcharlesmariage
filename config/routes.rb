@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
 
   resources :user do
+    resources :songs
     resources :children  
     resources :invites do 
       resources :presences

@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :invites, dependent: :destroy
   has_many :presences, through: :invites
+  has_many :songs
 end
