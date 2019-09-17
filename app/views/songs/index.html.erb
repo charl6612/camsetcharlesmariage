@@ -1,0 +1,11 @@
+<div class="container">
+
+  <h2>MES SONGS</h2>
+  <div class="cards" id="invites">
+    <% @user.songs.each do |song| %>
+  <%= song.title%>
+  <%= song.artist%>
+    <% end %>
+  </div>
+
+</div>
