@@ -1,11 +1,23 @@
-<div class="container">
-
-  <h2>MES SONGS</h2>
-  <div class="cards" id="invites">
-    <% @user.songs.each do |song| %>
-  <%= song.title%>
-  <%= song.artist%>
-    <% end %>
-  </div>
-
-</div>
+    
+    <div class="container">
+      <h2>MES SONGS</h2>
+      <%= link_to 'New', new_user_song_path(@user) %>
+      <div class="cards" id="invites">
+        <ul>
+          <% @user.songs.each do |song| %>
+            <li>
+              <%= song.title%>
+              -
+              <%= song.artist%>
+              <% unless song.url.nil?%>
+              -
+            <%= link_to "link", "#{song.url}", :target => "_blank" %>
+              <% end %>
+              -
+              
+              <%= link_to 'Delete', user_song_path(@user, song), method: :delete %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>

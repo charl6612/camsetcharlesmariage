@@ -16,6 +16,9 @@
               <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "btn btn_navbar" %>
             </li>
             <li class="nav-item">
+              <%= link_to "Ma Playlist", user_songs_path(current_user), class: "btn btn_navbar" %>
+            </li>
+            <li class="nav-item">
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn_navbar" %>
             </li>
           <% else %>
