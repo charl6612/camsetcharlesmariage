@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   require 'open-uri'
 
   def index         # GET /restaurants
-    @user = User.find(params[:user_id])
+    @user = User.find(current_user.id)
     @songs = @user.songs
   end
 
@@ -13,38 +13,42 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new
-    @user = User.find(params[:user_id])
+    # @user = User.find(params[:user_id])
+  end
+
+  def create        # POST /songs
+    if params[:track]
+      song_artist = params[:track][:artist_name]
+      song_track = params[:track][:track_name]
+      song_url = params[:track][:track_share_url]
+
+    else
+      song_artist = params["song"]["artist"]
+      song_track = params["song"]["title"]
+    end
+
+    @user = User.find(current_user.id)
+    @song = Song.new(title: song_track, artist: song_artist, url: song_url)
+    @song.user = current_user
+    @song.title = song_track
+    @song.artist = song_artist
+    @song.url = song_url
+
+    if @song.save
+      redirect_to user_songs_path(current_user)
+    else
+      render :new
+    end
   end
 
   def search
     artist = params[:song][:artist]
     track = params[:song][:title]
     apikey = ENV["MUSICXMATCH"]
-    url = "http://api.musixmatch.com/ws/1.1/track.search?q_artist=#{artist}&page_size=10&page=1&s_track_rating=desc&apikey=#{apikey}&q_track=#{track}"
+    url = "http://api.musixmatch.com/ws/1.1/track.search?q_artist=#{artist}&page_size=20&page=1&s_track_rating=desc&apikey=#{apikey}&q_track=#{track}"
     songs_serialized = open(url).read
-    song = JSON.parse(songs_serialized)["message"]["body"]["track_list"][0]
-    unless song.nil?
-      @song_url = song["track"]["track_share_url"]
-      @song_title = song["track"]["track_name"]
-      @song_artist = song["track"]["artist_name"]
-    end
-  end
-
-  def create        # POST /songs
-    search
-    @user = User.find(params[:user_id])
-    @song = Song.new(song_params)
-    @song.user = current_user
-    unless @song_artist.nil?
-      @song.title = @song_title
-      @song.artist = @song_artist
-      @song.url = @song_url
-    end
-    if @song.save
-      redirect_to user_songs_path(current_user)
-    else
-      render :new
-    end
+    @songs = JSON.parse(songs_serialized)["message"]["body"]["track_list"]
+    @song = Song.new
   end
 
   def edit          # GET /articles/:id/edit
@@ -68,6 +72,6 @@ class SongsController < ApplicationController
   private
 
   def song_params
-    params.require(:song).permit(:title, :artist)
+    params.require(:song).permit(:title, :artist, :url)
   end
 end

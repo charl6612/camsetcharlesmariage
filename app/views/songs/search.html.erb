@@ -1,0 +1,20 @@
+    <div class="container">
+      <h2>Résultats de la recherche</h2>
+      <ul>
+        <% @songs.each do |song| %>
+          <li>
+            <% unless song["track"]["track_share_url"].nil?%>
+              <%= song["track"]["track_name"]%> -
+              <%= song["track"]["artist_name"]%> -
+              <%= song["track"]["album_name"]%> -
+              <% songurl = song["track"]["track_share_url"]%>
+              <%= link_to " ",songurl, :target => "_blank", class: "btn btn-outline-info btn-sm fas fa-info" %>
+              <%= link_to ' ', songs_path(song), method: :post, class: "btn btn-outline-success btn-sm fas fa-plus" %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <h3>Vous n'avez pas trouvé votre chanson, insérez-là manuellement</h3>
+
+      <%= render  "form_manual" %>
+    </div>

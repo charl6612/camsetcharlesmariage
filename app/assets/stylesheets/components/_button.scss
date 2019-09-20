@@ -10,6 +10,15 @@
   transition: opacity 0.3s ease;
 }
 
+.btn-dark {
+  background-color:gray;
+  border: 1px solid whitesmoke;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+}
+
 .btn-ghost:hover {
   background-color:whitesmoke;
   opacity: 0.2;
@@ -17,10 +26,11 @@
 }
 
 .btn_navbar {
-  opacity: 0.2;
-  background-color:whitesmoke;
+  opacity: 1;
+  color: whitesmoke;
   border: 1px solid whitesmoke;
   padding: 8px 24px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
+  border-radius: 50px;
 }
