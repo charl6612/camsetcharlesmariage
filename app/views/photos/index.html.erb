@@ -1,0 +1,12 @@
+      
+    <div class="container" id="photos">
+      <h2>MES PHOTOS</h2>
+      <%= link_to 'New', new_user_photo_path(current_user), class: "btn btn-dark"  %>
+      <ul>
+        <% current_user.photos.each do |photo| %>
+            <%= cl_image_tag photo.url, height: 300, width: 400, crop: :fill %>
+           <%= link_to ' ', user_photo_path(current_user, photo), method: :delete, class: "btn btn-outline-danger fa fa-trash btn-sm" %>
+
+        </ul>
+        <% end %>
+      </div>

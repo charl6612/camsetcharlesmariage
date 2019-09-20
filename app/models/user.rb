@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :invites, dependent: :destroy
   has_many :presences, through: :invites
   has_many :songs
+  has_many :photos, dependent: :destroy
 end
