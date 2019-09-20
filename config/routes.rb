@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  get 'contacts/new'
-  get 'contact/new'
   devise_for :users
   root to: 'pages#home'
   resources :contacts, only: [:new, :create]
+  post 'songs/search', to: 'songs#search', as: :songsearch
+  resources :songs, only: [:new, :create, :destroy]
 
 
 
   resources :user do
-    resources :songs
+    resources :songs, only: [:index]
     resources :children  
     resources :invites do 
       resources :presences
