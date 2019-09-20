@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :user do
     resources :songs, only: [:index]
     resources :children  
+    resources :photos
     resources :invites do 
       resources :presences
     end
