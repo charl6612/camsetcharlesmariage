@@ -1,6 +1,6 @@
 import "bootstrap";
-import "../spotify";
 import "../onebutton";
+import "../upload";
 //= require jquery  
 //= require turbolinks  
 //= require materialize-sprockets

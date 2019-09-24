@@ -1,54 +1,36 @@
- 
+    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <% i = 0 %>
+        <% @carousels.each do |carousel| %>
+          <% if i == 0 %>
+            <li data-target="#carouselExampleIndicators" data-slide-to=i class="active"></li>
+          <% else %>
+            <li data-target="#carouselExampleIndicators" data-slide-to=i></li>
+          <% end %>
+          <% i += 1 %>
+        <% end %>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/c_fill,h_600,w_1300/v1568294157/mariage/P1040551_yc5do1.jpg" alt="First slide">
+        <% i = 1 %>
+        <% @carousels.each do |carousel| %>
+          <% if i == 1 %>
+            <div class="carousel-item active">
+            <% else %>
+              <div class="carousel-item">
+              <% end %>
+              <% url = "https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/c_fill,h_600,w_1300/v1568294157/#{carousel["public_id"]}.jpg"%>
+              <img class="d-block w-100" src=<%= url %> alt="slide">
+            </div>
+            <% i += 1 %>
+          <% end %>
         </div>
-        <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294157/mariage/P1030440_u5oz6q.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294156/mariage/1000757_so7wsy.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294155/mariage/P1010906_a0wngr.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294155/mariage/P1010776_ezphe4.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294155/mariage/P1010418_ketiof.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294154/mariage/P1010899_s8yg17.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294154/mariage/1000752_dtsnkp.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294153/mariage/P1040566_fq4fcl.jpg" alt="First slide">
-        </div>
-                <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dsp2exmo1/image/upload/q_auto:good/c_fill,h_600,w_1300/v1568294153/mariage/BT000236_dwl3qx.jpg" alt="First slide">
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
