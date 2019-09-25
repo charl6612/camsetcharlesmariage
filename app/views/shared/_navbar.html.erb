@@ -1,32 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav">
           <% if user_signed_in? %>
             <li class="nav-item">
-              <a class="btn btn_navbar" href="/#histoire">Histoire <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="btn btn_navbar" href="/#lemariage">Le mariage</a>
+              <a class="nav-link" href="/#lemariage">Le mariage</a>
             </li>
             <li class="nav-item">
-              <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "btn btn_navbar" %>
+              <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Ma Playlist", user_songs_path(current_user, anchor: "playlist"), class: "btn btn_navbar" %>
+              <%= link_to "Ma Playlist", user_songs_path(current_user, anchor: "playlist"), class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Mes photos", user_photos_path(current_user, anchor: "photos"), class: "btn btn_navbar" %>
+              <%= link_to "Mes photos", user_photos_path(current_user, anchor: "photos"), class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn_navbar" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
           <% else %>
             <li class="nav-item">
-              <%= link_to "Login", new_user_session_path, class: "btn btn_navbar" %>
+              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
             </li>
           <% end %>
         </ul>

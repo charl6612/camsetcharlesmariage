@@ -11,6 +11,7 @@ if (document.getElementById("upload_widget")) {
     uploadPreset: 'lzscndb0'
   }, (error, result) => {
     if (!error && result && result.event === "success") {
+      uploadok(result.event)
     }
   }
 
@@ -21,4 +22,18 @@ if (document.getElementById("upload_widget")) {
     myWidget.open();
   }, false);
 
+}
+
+function uploadok(result) {
+  if (document.getElementById("confirmation_test")){
+    node = document.getElementById("confirmation_test")
+    node.remove()
+  }
+
+  if (result === "success") {
+    const place = document.querySelector(".container-form");
+    place.insertAdjacentHTML('beforeend',
+      `<div class="row justify-content-md-center" style="text-align: center" id="confirmation_test">Importation réussie. La mise à jour prend quelques minutes et nécessite un rechargement de la page</div>`
+    )
+  }
 }

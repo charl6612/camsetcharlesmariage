@@ -1,6 +1,5 @@
 class PhotosController < ApplicationController
   def index         # GET /restaurants
-    @photos = Photo.all
     @user = User.find(params[:user_id])
     email = @user.email
 
@@ -42,7 +41,7 @@ class PhotosController < ApplicationController
 
   def destroy
     @photo = Photo.find(params[:id])
-    @photo.destroy
+    Cloudinary::Api.delete_resources(public_ids = {}, options = {})
     redirect_to user_photos_path
   end
 
