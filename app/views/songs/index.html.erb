@@ -1,7 +1,6 @@
     
     <div class="container" id="playlist">
       <h2>MES SONGS</h2>
-      <%= link_to 'New', new_song_path(), class: "btn btn-dark"  %>
       <ul>
         <% @user.songs.each do |song| %>
           <li>
@@ -15,5 +14,8 @@
 
           </li>
         <% end %>
+                    <%= link_to 'New', new_song_path(), class: "btn btn-primary"  %>
+
       </ul>
+
     </div>
