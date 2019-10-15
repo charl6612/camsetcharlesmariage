@@ -6,6 +6,8 @@ class PhotosController < ApplicationController
     url = "http://res.cloudinary.com/dsp2exmo1/image/list/#{email}.json"
     photos_serialized = open(url).read
     @photos = JSON.parse(photos_serialized)["resources"]
+  rescue OpenURI::HTTPError
+    puts "Handle missing video here"
   end
 
   def show          # GET /Photos/:id

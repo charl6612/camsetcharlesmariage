@@ -26,6 +26,9 @@
           <%= f.input :nuit_jeudi, label:  "presence nuit du jeudi (nuit dans le gîte)", as: :radio_buttons %>
           <%= f.input :nuit_vendredi, label:  "presence nuit du vendredi (nuit dans le gîte)", as: :radio_buttons %>
           <% end %>
+                    <% if @invite.allowedrebond == true %>
+          <%= f.input :rebond, label:  "presence rebond", as: :radio_buttons %>
+          <% end %>
             <%= f.button :submit, class: "btn btn-primary" %>
 
         </div>

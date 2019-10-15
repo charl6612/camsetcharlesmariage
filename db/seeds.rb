@@ -1,4 +1,5 @@
 Presence.delete_all
+Song.delete_all
 Invite.delete_all
 User.delete_all
 
@@ -51,6 +52,7 @@ invit = Invite.create(
   last_name: "#{row['last_name']}",
   temoin:"#{row['temoin']}",    
   allowedbefore:"#{row['allowedbefore']}",
+  allowedrebond:"#{row['rebond']}",
   child: "#{row['child']}",
   email: "#{row['email']}",
   user: user,
