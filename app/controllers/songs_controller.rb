@@ -35,7 +35,6 @@ class SongsController < ApplicationController
     @song.url = song_url
 
     if @song.save
-      send_welcome_email
       redirect_to user_songs_path(current_user)
     else
       render :new
@@ -75,9 +74,4 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:title, :artist, :url)
   end
-
-  def send_welcome_email
-    UserMailer.with(user: self).welcome.deliver_now
-  end
-
 end
