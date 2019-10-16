@@ -3,27 +3,6 @@ Song.delete_all
 Invite.delete_all
 User.delete_all
 
-# puts 'creating charles'
-
-# user1 = User.create(
-#   email: "charles@gmail.com",
-#   password:"password"
-# )
-
-# puts 'creating camille'
-# invit = Invite.create(
-#   email: "camille@gmail.com",
-#   first_name: "camille",
-#   last_name: "delannoy",
-#   allowedbefore: true,
-#   temoin: false,
-#   user: user1,
-# )
-
-# presence = Presence.new(
-# )
-# presence.invite = invit
-# presence.save
 
 puts "import csv"
 
@@ -65,5 +44,3 @@ presence.save
 
 
 end
-
-
