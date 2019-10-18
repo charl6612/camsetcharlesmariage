@@ -5,7 +5,6 @@ class SongsController < ApplicationController
   def index         # GET /restaurants
     @user = User.find(current_user.id)
     @songs = @user.songs
-    send_welcome_email
   end
 
   def show          # GET /songs/:id
