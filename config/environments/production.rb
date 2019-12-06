@@ -83,9 +83,21 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  config.action_mailer.delivery_method     = :postmark
-  config.action_mailer.postmark_settings   = { api_token: ENV['POSTMARK_API_TOKEN'] }
-  config.action_mailer.default_url_options = { host: "https://www.consignerie.fr/" }
+  config.action_mailer.default_url_options = { host: "http://camsetcharles.herokuapp.com/" }
+  config.action_mailer.delivery_method = :mailgun
+    config.action_mailer.mailgun_settings = {
+    api_key: ENV['MAILGUN_API_KEY'],
+    domain: ENV['MAILGUN_DOMAIN'],
+  }
+
+  Mail.defaults do
+    delivery_method :smtp, {
+      :port      => 587,
+      :address   => "smtp.mailgun.org",
+      :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+      :password  => ENV['MAILGUN_SMTP_PASSWORD'],
+    }
+  end
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
