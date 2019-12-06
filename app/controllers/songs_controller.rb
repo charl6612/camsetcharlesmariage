@@ -1,6 +1,7 @@
 class SongsController < ApplicationController
   require 'json'
   require 'open-uri'
+  require 'mail'
 
   def index         # GET /restaurants
     @user = User.find(current_user.id)
@@ -76,7 +77,6 @@ class SongsController < ApplicationController
   end
 
   def send_welcome_email
-    UserMailer.with(user: self).welcome.deliver_now
+    UserMailer.welcome
   end
-  
 end

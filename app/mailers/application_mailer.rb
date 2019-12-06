@@ -1,5 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "#{ENV["MAILGUN_SMTP_LOGIN"]}"
-
+  default from: 'salut@camsetcharles.com'
   layout 'mailer'
 end
