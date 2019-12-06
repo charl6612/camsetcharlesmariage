@@ -19,9 +19,10 @@ gem 'open-iconic-rails'
 gem 'cloudinary', '~> 1.9.1'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'letter_opener'
 gem 'mailgun-ruby', '~>1.1.6'
 gem 'carrierwave'
+gem 'mail_interceptor', group: [:development, :staging]
+gem 'letter_opener', group: :development
 
 # gem "omniauth-rails_csrf_protection"
 

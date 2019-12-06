@@ -1,14 +1,23 @@
 Rails.application.configure do
-  ActionMailer::Base.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'camsetcharles.heroku.com',
-    :authentication => :plain,
+  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  config.action_mailer.delivery_method = :letter_opener
+    config.action_mailer.mailgun_settings = {
+    api_key: ENV['MAILGUN_API_KEY'],
+    domain: ENV['MAILGUN_DOMAIN'],
   }
-  ActionMailer::Base.delivery_method = :smtp
-  # config.action_mailer.delivery_method = :letter_opener
+
+  Mail.defaults do
+    delivery_method :smtp, {
+      :port      => 587,
+      :address   => "smtp.mailgun.org",
+      :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+      :password  => ENV['MAILGUN_SMTP_PASSWORD'],
+    }
+  end
+  
+
+  # config.action_mailer.delivery_method     = :letter_opener
+
 
   # Settings specified here will take precedence over those in config/application.rb.
 

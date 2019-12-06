@@ -7,3 +7,9 @@ class User < ApplicationRecord
   has_many :presences, through: :invites
   has_many :songs
 end
+
+private
+
+def send_welcome_email
+  UserMailer.with(user: self).welcome.deliver_now
+end

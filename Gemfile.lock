@@ -103,6 +103,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    mail_interceptor (0.0.7)
+      activesupport
     mailgun-ruby (1.1.11)
       rest-client (~> 2.0.2)
     marcel (0.3.3)
@@ -240,6 +242,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   letter_opener
   listen (~> 3.0.5)
+  mail_interceptor
   mailgun-ruby (~> 1.1.6)
   open-iconic-rails
   pg (~> 0.21)
