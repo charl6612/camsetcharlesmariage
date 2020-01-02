@@ -20,7 +20,6 @@ CSV.foreach(filepath, csv_options) do |row|
     email: "#{row['emailcompte']}",
     password:"#{row['mdp']}",
     )
-
   else
     user = User.find_by(email: "#{row['emailcompte']}")
   end
@@ -41,6 +40,9 @@ presence = Presence.new(
 )
 presence.invite = invit
 presence.save
+end
 
-
+#send mail to everybody*
+User.all.each do |user|
+  UserMailer.welcome_email(user).deliver_now
 end

@@ -23,6 +23,7 @@ gem 'mailgun-ruby', '~>1.1.6'
 gem 'carrierwave'
 gem 'mail_interceptor', group: [:development, :staging]
 gem 'letter_opener', group: :development
+gem 'country_select'
 
 # gem "omniauth-rails_csrf_protection"
 

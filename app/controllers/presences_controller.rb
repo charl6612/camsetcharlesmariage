@@ -54,6 +54,6 @@ class PresencesController < ApplicationController
   private
 
   def presence_params
-    params.require(:presence).permit(:nuit_jeudi, :nuit_vendredi, :nuit_samedi, :mariage, :rebond)
+    params.require(:presence).permit(:nuit_jeudi, :nuit_vendredi, :nuit_samedi, :mariage, :rebond, :samedi_pm)
   end
 end

@@ -1,9 +1,9 @@
+    
     <div class="card-product">
       <!-- <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> -->
       <div class="card-product-infos">
         <h2>
           <%= invite.first_name.upcase %>
-          EST INVITE(E)
           <% if invite.child == true %>
             <i class="fas fa-baby"></i>
           <% end %>
@@ -22,28 +22,33 @@
         time:          :horizontal_multi_select
       } do |f| %>
           <%= f.error_notification %>
-
-
           <div class="card-details d-flex">
-                        <div class="bloc2 mr-5">
             <% if invite.allowedbefore == true %>
-                <%= f.input :nuit_jeudi, label:  "Nuit du jeudi", as: :radio_buttons %>
-                <%= f.input :nuit_vendredi, label: "Nuit du vendredi", as: :radio_buttons %>
-              <% end %>
-              <% if invite.allowedrebond == true %>
-                <%= f.input :rebond, label:  "presence rebond", as: :radio_buttons %>
-              <% end %>
-            </div>
+              <div class="bloc2 mr-5">
+                <%= f.input :nuit_jeudi, label:  "Je suis là jeudi", as: :radio_buttons %>
+                <%= f.input :nuit_vendredi, label: "Je suis là vendredi", as: :radio_buttons %>
+              </div>
+            <% end %>
 
             <div class="bloc1">
-              <%= f.input :mariage,label: "Soirée mariage", as: :radio_buttons, error: 'obligatoire'%>
-              <%= f.input :nuit_samedi, label: "Nuit du samedi", as: :radio_buttons, error: 'obligatoire'%>
+            <% if invite.child == true %>
+              <%= f.input :samedi_pm,label: "Samedi après-midi", as: :radio_buttons, error: 'obligatoire'%>
+              <%= f.input :mariage,label: "Soirée mariage (t'es sûr ?)", as: :radio_buttons, error: 'obligatoire'%>
+              <%= f.input :nuit_samedi, label: "Nuit du samedi (non vraiment ?)", as: :radio_buttons, error: 'obligatoire'%>
+                            <% if invite.allowedrebond == true %>
+                <%= f.input :rebond, label:  "Dimanche midi", as: :radio_buttons %>
+              <% end %>
+            <% else %>
+              <%= f.input :mariage,label: "Je viens au mariage", as: :radio_buttons, error: 'obligatoire'%>
+              <%= f.input :nuit_samedi, label: "Je dors samedi", as: :radio_buttons, error: 'obligatoire'%>
+                            <% if invite.allowedrebond == true %>
+                <%= f.input :rebond, label:  "Je viens dimanche midi", as: :radio_buttons %>
+              <% end %>
+            <% end %>
             </div>
-
           </div>
-
-
-          <%= f.button :submit, class: "btn btn-primary" %>
+        
+          <%= f.button :submit,"Valider", class: "btn btn-primary" %>
         <% end %>
         <%# fin du form%>
         <%# fin de card-product info %>

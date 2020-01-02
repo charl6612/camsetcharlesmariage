@@ -1,13 +1,22 @@
 Bonjour <%= @sentence %>, 
-
-===============================================
+<br/>
+<br/>
  
-Si vous recevez ce mail, c'est que vous êtes invités au mariage de Camille et Charles.
-Vous pouvez accéder au site avec toutes les explications sur le déroulement ainsi que valider votre présence.
+Si vous recevez ce mail, c'est que vous êtes invités au mariage de Camille et Charles le Samedi 23 mai 2020.
+<br/>
+Vous pouvez accéder au site avec toutes les explications sur le déroulement de la journée, ajouter vos musiques préférées, partager vos photos, et surtout valider votre présence.
+<br/>
+<br/>
+Votre identifiant (pour toute la famille) est : <%= @user.email %>
+<br/>
+<br/>
+Cliquez sur ce lien pour valider votre compte
+  <%= link_to "Valider mon compte", new_user_password_url %><br />
 
-votre identifiant (pour toute la famille est): <%= @user.email %>
-cliquez sur ce lien pour créer votre mot de passe
-  <%= link_to "Mot de passe", new_user_password_url %><br />
-
-
+<br/>
+<br/>
 A bientôt
+<br/>
+<br/>
+
+Cams et Charles
