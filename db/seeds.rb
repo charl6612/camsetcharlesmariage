@@ -45,4 +45,4 @@ end
 # #send mail to everybody*
 # User.all.each do |user|
 #   UserMailer.welcome_email(user).deliver_now
-end
+# end
