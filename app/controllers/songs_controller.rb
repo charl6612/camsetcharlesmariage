@@ -75,8 +75,4 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:title, :artist, :url)
   end
-
-  def send_welcome_email
-    UserMailer.welcome
-  end
 end

@@ -16,6 +16,6 @@ class UserMailer < ApplicationMailer
     @user.invites.each do |inv|
       list << inv.first_name
     end
-    list.to_sentence
+    list.to_sentence(locale: :fr)
   end
 end
