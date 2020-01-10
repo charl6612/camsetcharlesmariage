@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   post 'songs/search', to: 'songs#search', as: :songsearch
   resources :songs, only: [:new, :create, :destroy]
-
-
+  get 'contact', to: 'pages#contact', as: :contact
 
   resources :user do
     resources :songs, only: [:index]
