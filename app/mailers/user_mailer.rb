@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
     @user = user
     @sentence = sentence_invite(@user)
     @url  = 'camsetcharles.herokuapp.com'
-    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
+    mail(to: @user.email, subject: 'Bienvenue au mariage de Cams et Charles')
   end
 
   def sentence_invite(user)
