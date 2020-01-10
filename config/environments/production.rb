@@ -84,20 +84,20 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   config.action_mailer.default_url_options = { host: "http://camsetcharles.herokuapp.com/" }
-  config.action_mailer.delivery_method = :mailgun
-    config.action_mailer.mailgun_settings = {
-    api_key: ENV['MAILGUN_API_KEY'],
-    domain: ENV['MAILGUN_DOMAIN'],
-  }
+  config.action_mailer.delivery_method = :smtp
+  #   config.action_mailer.mailgun_settings = {
+  #   api_key: ENV['MAILGUN_API_KEY'],
+  #   domain: ENV['MAILGUN_DOMAIN'],
+  # }
 
-  Mail.defaults do
-    delivery_method :smtp, {
-      :port      => 587,
-      :address   => "smtp.mailgun.org",
-      :user_name => ENV['MAILGUN_SMTP_LOGIN'],
-      :password  => ENV['MAILGUN_SMTP_PASSWORD'],
-    }
-  end
+  # Mail.defaults do
+  #   delivery_method :smtp, {
+  #     :port      => 587,
+  #     :address   => "smtp.mailgun.org",
+  #     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+  #     :password  => ENV['MAILGUN_SMTP_PASSWORD'],
+  #   }
+  # end
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
