@@ -1,19 +1,70 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
-  config.action_mailer.delivery_method = :letter_opener
-    config.action_mailer.mailgun_settings = {
-    api_key: ENV['MAILGUN_API_KEY'],
-    domain: ENV['MAILGUN_DOMAIN'],
-  }
 
-  Mail.defaults do
-    delivery_method :smtp, {
-      :port      => 587,
-      :address   => "smtp.mailgun.org",
-      :user_name => ENV['MAILGUN_SMTP_LOGIN'],
-      :password  => ENV['MAILGUN_SMTP_PASSWORD'],
-    }
-  end
+  #Configuration de dév
+  # config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  # config.action_mailer.delivery_method = :letter_opener
+  #   config.action_mailer.mailgun_settings = {
+  #   api_key: ENV['MAILGUN_API_KEY'],
+  #   domain: ENV['MAILGUN_DOMAIN'],
+  # }
+  # Mail.defaults do
+  #   delivery_method :smtp, {
+  #     :port      => 587,
+  #     :address   => "smtp.mailgun.org",
+  #     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+  #     :password  => ENV['MAILGUN_SMTP_PASSWORD'],
+  #   }
+  # end
+  #################""""
+  
+
+# configuration de dév avec envoi de vrai mail
+  # config.action_mailer.default_url_options = { host: "http://camsetcharles.herokuapp.com/" }
+  # config.action_mailer.delivery_method = :mailgun
+  #   config.action_mailer.mailgun_settings = {
+  #   api_key: ENV['MAILGUN_API_KEY'],
+  #   domain: ENV['MAILGUN_DOMAIN'],
+  # }
+  # Mail.defaults do
+  #   delivery_method :smtp, {
+  #     :port      => 587,
+  #     :address   => "smtp.mailgun.org",
+  #     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
+  #     :password  => ENV['MAILGUN_SMTP_PASSWORD'],
+  #   }
+  # end
+#################""
+
+
+# configuration de dév avec envoi de vrai mail
+  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+# config.action_mailer.delivery_method = :sendgrid_actionmailer
+# config.action_mailer.sendgrid_actionmailer_settings = {
+#   api_key: ENV["SENDGRID_API_KEY"]
+# }
+
+config.action_mailer.delivery_method = :smtp
+
+
+
+#################""
+
+
+# configuration de dév avec envoi de vrai mail
+# config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+# config.action_mailer.delivery_method = :smtp
+# config.action_mailer.perform_deliveries = true
+# config.action_mailer.smtp_settings = {
+#   :user_name => ENV['SENDGRID_USERNAME'],
+#   :password => ENV['SENDGRID_PASSWORD'],
+#   :domain => 'http://localhost:3000/',
+#   :address => 'smtp.sendgrid.net',
+#   :port => 587,
+#   :authentication => :plain,
+#   :enable_starttls_auto => true
+# }
+#################""
+
   
 
   # config.action_mailer.delivery_method     = :letter_opener
