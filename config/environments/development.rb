@@ -43,7 +43,7 @@ Rails.application.configure do
 #   api_key: ENV["SENDGRID_API_KEY"]
 # }
 
-config.action_mailer.delivery_method = :smtp
+config.action_mailer.delivery_method = :letter_opener
 
 
 
