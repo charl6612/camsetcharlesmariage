@@ -12,9 +12,7 @@ csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 filepath    = './lib/mariage - liste_full.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
-
   if   !User.find_by(email: "#{row['emailcompte']}")
-
     puts "creating user #{row['emailcompte']}"
     user = User.create(
     email: "#{row['emailcompte']}",
