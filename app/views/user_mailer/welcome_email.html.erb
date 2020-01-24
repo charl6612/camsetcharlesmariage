@@ -10,10 +10,12 @@ Vous pouvez accéder au site avec toutes les explications sur le déroulement de
 Votre identifiant (pour toute la famille) est : <%= @user.email %>
 <br/>
 <br/>
-Cliquez sur ce lien pour valider votre compte
-  <%= link_to "Valider mon compte", new_user_password_url %><br />
+Cliquez sur ce lien pour valider votre compte et créer votre mot de passe
+  <%= link_to "Valider mon compte", edit_user_password_url(reset_password_token: @raw) %><br />
 
 <br/>
+
+
 <br/>
 A bientôt
 <br/>
