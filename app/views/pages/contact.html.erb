@@ -3,17 +3,19 @@
         <form  method="post" name="frmContentDownload">
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value=<%=current_user.email%>>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" value=<%=current_user.email%>>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPrenom">Prénom</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Michel Michel">
+            <input type="text" class="form-control" id="prenom" placeholder=<%=current_user.invites.first.first_name%>>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
+              <%= link_to 'test', send_contact_mail_path, method: :post %>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
