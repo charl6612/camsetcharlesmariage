@@ -5,10 +5,26 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.welcome.subject
   #
   def welcome_email(user)
+
+    generate_token(user)
+
     @user = user
     @sentence = sentence_invite(@user)
     @url  = 'camsetcharles.herokuapp.com'
     mail(to: @user.email, subject: 'Bienvenue au mariage de Cams et Charles')
+
+
+  end
+
+  def generate_token(user)
+
+    @raw = nil
+    raw, enc = Devise.token_generator.generate(user.class, :reset_password_token)
+
+    user.reset_password_token   = enc
+    user.reset_password_sent_at = Time.now.utc
+    user.save(validate: false)
+    @raw = raw
   end
 
   def sentence_invite(user)
