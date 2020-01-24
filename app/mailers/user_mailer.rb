@@ -34,4 +34,9 @@ class UserMailer < ApplicationMailer
     end
     list.to_sentence(locale: :fr)
   end
+
+  def general_message(contact)
+    @contact = contact
+    mail(from:"camsetcharles", to: "noppe.charles@gmail.com", subject: 'Message du site')
+  end
 end
