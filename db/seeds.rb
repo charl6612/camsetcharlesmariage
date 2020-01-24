@@ -1,6 +1,7 @@
 Presence.delete_all
 Song.delete_all
 Invite.delete_all
+Contact.delete_all
 User.delete_all
 
 
