@@ -11,11 +11,14 @@ class ContactsController < ApplicationController
     @contact.email = @user.email
     if @contact.save
       UserMailer.general_message(@contact).deliver_now
+      redirect_to contacts_thanks_path()
     else
+      render :new
     end
   end
   
   def thanks
+
   end
 
   private
