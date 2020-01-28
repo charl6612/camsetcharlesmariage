@@ -3,7 +3,7 @@ class PhotosController < ApplicationController
     @user = User.find(params[:user_id])
     email = @user.email
 
-    url = "http://res.cloudinary.com/dsp2exmo1/image/list/#{email}.json"
+    url = "http://res.cloudinary.com/dsp2exmo1/image/list/mariage.json"
     photos_serialized = open(url).read
     @photos = JSON.parse(photos_serialized)["resources"]
   rescue OpenURI::HTTPError
