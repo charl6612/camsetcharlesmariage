@@ -1,122 +1,126 @@
-"emailcompte","mdp","first_name","last_name","type","temoin","allowedbefore","allowedrebond","child","email","emailcompteOK?","sent ?"
-"albane_1@yahoo.fr","password","Albane","Albane","amis","FALSE","FALSE","FALSE","FALSE","albane_1@yahoo.fr","TRUE","FALSE"
-"alexandre-peron@outlook.fr","password","Alexandre","Peron","amis","TRUE","TRUE","TRUE","FALSE","alexandre-peron@outlook.fr","TRUE","FALSE"
-"alexandre-peron@outlook.fr","password","Julia","Weiss","amis","FALSE","TRUE","TRUE","FALSE","alexandre-peron@outlook.fr","TRUE","FALSE"
-"amit.bdc@hotmail.fr","password","Amit","Beedassy","amis","FALSE","TRUE","TRUE","FALSE","amit.bdc@hotmail.fr","TRUE","FALSE"
-"amit.bdc@hotmail.fr","password","Mia","Beedassy","enfant","FALSE","FALSE","TRUE","TRUE","amit.bdc@hotmail.fr","TRUE","FALSE"
-"amit.bdc@hotmail.fr","password","Noémie","Beedassy","amis","FALSE","TRUE","TRUE","FALSE","amit.bdc@hotmail.fr","TRUE","FALSE"
-"anais.jouan@hotmail.fr","password","Laurent","Anais","amis","FALSE","FALSE","FALSE","FALSE","anais.jouan@hotmail.fr","TRUE","FALSE"
-"anais.jouan@hotmail.fr","password","Anais","mami","amis","FALSE","FALSE","FALSE","FALSE","anais.jouan@hotmail.fr","TRUE","FALSE"
-"anais@gmail.com","password","Ruben","mami","enfant","FALSE","FALSE","FALSE","TRUE","anais@gmail.com","TRUE","FALSE"
-"aurelie.baptista.lille@gmail.com","password","Abel","goudeseune","enfant","FALSE","FALSE","TRUE","TRUE","aurelie.baptista.lille@gmail.com","TRUE","FALSE"
-"aurelie.baptista.lille@gmail.com","password","Aurélie","Goudeseune","amis","FALSE","TRUE","TRUE","FALSE","aurelie.baptista.lille@gmail.com","TRUE","FALSE"
-"aurelie.baptista.lille@gmail.com","password","Rémi","Goudeseune","amis","TRUE","TRUE","TRUE","FALSE","aurelie.baptista.lille@gmail.com","TRUE","FALSE"
-"baptiste.fantino@gmail.com","password","Alix","deffieux","amis","FALSE","TRUE","TRUE","FALSE","baptiste.fantino@gmail.com","TRUE","FALSE"
-"baptiste.fantino@gmail.com","password","Baptiste","fantino","amis","FALSE","TRUE","TRUE","FALSE","baptiste.fantino@gmail.com","TRUE","FALSE"
-"bruneau.so@gmail.com","password","Héloise","fofie","enfant","FALSE","FALSE","FALSE","TRUE","bruneau.so@gmail.com","TRUE","FALSE"
-"bruneau.so@gmail.com","password","Markus","markus","amis","FALSE","FALSE","FALSE","FALSE","bruneau.so@gmail.com","TRUE","FALSE"
-"bruneau.so@gmail.com","password","Sophie","markus","amis","FALSE","FALSE","FALSE","FALSE","bruneau.so@gmail.com","TRUE","FALSE"
-"carole.langguth@orange.fr","password","Carole","langguth","famille charles","FALSE","FALSE","TRUE","FALSE","carole.langguth@orange.fr","TRUE","FALSE"
-"carole.langguth@orange.fr","password","Marc","langguth","famille charles","FALSE","FALSE","TRUE","FALSE","carole.langguth@orange.fr","TRUE","FALSE"
-"carole.langguth@orange.fr","password","Victor","langguth","famille charles","FALSE","FALSE","TRUE","FALSE","carole.langguth@orange.fr","TRUE","FALSE"
-"carole.langguth@orange.fr","password","Maxime","langguth","famille charles","FALSE","FALSE","TRUE","FALSE","carole.langguth@orange.fr","TRUE","FALSE"
-"carole.langguth@orange.fr","password","Pierre","langguth","famille charles","FALSE","FALSE","TRUE","FALSE","carole.langguth@orange.fr","TRUE","FALSE"
-"carpentier.coline@yahoo.fr","password","Coline","Carpentier","amis","FALSE","TRUE","TRUE","FALSE","carpentier.coline@yahoo.fr","TRUE","FALSE"
-"carpentier.coline@yahoo.fr","password","Bastien","Deleau","amis","FALSE","TRUE","TRUE","FALSE","carpentier.coline@yahoo.fr","TRUE","FALSE"
-"carpentier.coline@yahoo.fr","password","Manon","deleau","enfant","FALSE","FALSE","TRUE","TRUE","carpentier.coline@yahoo.fr","TRUE","FALSE"
-"cathyjulienw@gmail.com","password","Charly","wattel","enfant","FALSE","FALSE","TRUE","TRUE","cathyjulienw@gmail.com","TRUE","FALSE"
-"cathyjulienw@gmail.com","password","Julien","Wattel","amis","FALSE","TRUE","TRUE","FALSE","cathyjulienw@gmail.com","TRUE","FALSE"
-"cathyjulienw@gmail.com","password","Cathy","Werbrouck","amis","TRUE","TRUE","TRUE","FALSE","cathyjulienw@gmail.com","TRUE","FALSE"
-"cedric.delattre@laposte.net","password","Cédric","delattre","famille charles","FALSE","FALSE","FALSE","FALSE","cedric.delattre@laposte.net","TRUE","FALSE"
-"cedric.delattre@laposte.net","password","Lise","delattre","famille charles","FALSE","FALSE","FALSE","FALSE","cedric.delattre@laposte.net","TRUE","FALSE"
-"cedric.delattre@laposte.net","password","Océane","delattre","enfant","FALSE","FALSE","FALSE","TRUE","cedric.delattre@laposte.net","TRUE","FALSE"
-"charlottefaes@hotmail.fr","password","Charlotte","Farez","amis","FALSE","TRUE","TRUE","FALSE","charlottefaes@hotmail.fr","TRUE","FALSE"
-"charlottefaes@hotmail.fr","password","Julien","Farez","amis","FALSE","TRUE","TRUE","FALSE","charlottefaes@hotmail.fr","TRUE","FALSE"
-"charlottefaes@hotmail.fr","password","Octave","Farez","enfant","FALSE","FALSE","TRUE","TRUE","charlottefaes@hotmail.fr","TRUE","FALSE"
-"clemence-n88@hotmail.fr","password","Clémence","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","clemence-n88@hotmail.fr","TRUE","FALSE"
-"coralie_maldonado@hotmail.fr","password","Coralie","Maldonado","amis","FALSE","FALSE","FALSE","FALSE","coralie_maldonado@hotmail.fr","TRUE","FALSE"
-"cyrile.opposite@gmail.com","password","Cyrile","opposité","famille cams","FALSE","FALSE","TRUE","FALSE","cyrile.opposite@gmail.com","TRUE","FALSE"
-"delannoy.arnaud@free.fr","password","Arnaud","delannoy","famille cams","FALSE","FALSE","TRUE","FALSE","delannoy.arnaud@free.fr","TRUE","FALSE"
-"delannoy.arnaud@free.fr","password","Véronique","delannoy","famille cams","FALSE","FALSE","TRUE","FALSE","delannoy.arnaud@free.fr","TRUE","FALSE"
-"delannoy.elise@gmail.com","password","Elise","delannoy","famille cams","TRUE","TRUE","TRUE","FALSE","delannoy.elise@gmail.com","TRUE","TRUE"
-"delphine-del@live.fr","password","Delphine","delattre","famille charles","FALSE","FALSE","FALSE","FALSE","delphine-del@live.fr","TRUE","FALSE"
-"delphine-del@live.fr","password","Ivon","delphine","famille charles","FALSE","FALSE","FALSE","FALSE","delphine-del@live.fr","TRUE","FALSE"
-"foucher.marine@gmail.com","password","Marine","Marine","amis","FALSE","FALSE","FALSE","FALSE","foucher.marine@gmail.com","TRUE","FALSE"
-"jeanclaude.delattre@free.fr","password","Christine","delattre","famille charles","FALSE","FALSE","FALSE","FALSE","jeanclaude.delattre@free.fr","TRUE","FALSE"
-"jeanclaude.delattre@free.fr","password","Tonton jean claude","delattre","famille charles","FALSE","FALSE","FALSE","FALSE","jeanclaude.delattre@free.fr","TRUE","FALSE"
-"jeanne.drieux@gmail.com","password","Apolline","Drieux","enfant","FALSE","FALSE","TRUE","TRUE","jeanne.drieux@gmail.com","TRUE","FALSE"
-"jeanne.drieux@gmail.com","password","Jeannette","Drieux","amis","FALSE","FALSE","TRUE","FALSE","jeanne.drieux@gmail.com","TRUE","FALSE"
-"jeanne.drieux@gmail.com","password","Antho","jeanne","amis","FALSE","FALSE","TRUE","FALSE","jeanne.drieux@gmail.com","TRUE","FALSE"
-"joelnoppe@gmail.com","password","Joel","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","joelnoppe@gmail.com","TRUE","FALSE"
-"joelnoppe@gmail.com","password","Mémé","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","joelnoppe@gmail.com","TRUE","FALSE"
-"joelnoppe@gmail.com","password","Sylvie","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","joelnoppe@gmail.com","TRUE","FALSE"
-"ju.delannoy@gmail.com","password","Juliette","delannoy","famille cams","TRUE","TRUE","TRUE","FALSE","ju.delannoy@gmail.com","TRUE","TRUE"
-"ju.delannoy@gmail.com","password","Clément","vanderperre","famille cams","FALSE","TRUE","TRUE","FALSE","ju.delannoy@gmail.com","TRUE","TRUE"
-"ju.delannoy@gmail.com","password","Gabriel","vanderperre","enfant","FALSE","FALSE","TRUE","TRUE","ju.delannoy@gmail.com","TRUE","TRUE"
-"jul.chappuy@hotmail.fr","password","Alix","Julie","enfant","FALSE","FALSE","TRUE","TRUE","jul.chappuy@hotmail.fr","TRUE","FALSE"
-"jul.chappuy@hotmail.fr","password","Corentin","Julie","amis","FALSE","FALSE","TRUE","FALSE","jul.chappuy@hotmail.fr","TRUE","FALSE"
-"jul.chappuy@hotmail.fr","password","Julie","Julie","amis","FALSE","TRUE","TRUE","FALSE","jul.chappuy@hotmail.fr","TRUE","FALSE"
-"laurapaquet88@gmail.com","password","Julien","Dewall","amis","FALSE","TRUE","TRUE","FALSE","laurapaquet88@gmail.com","TRUE","FALSE"
-"laurapaquet88@gmail.com","password","Laura","Dewall","amis","FALSE","TRUE","TRUE","FALSE","laurapaquet88@gmail.com","TRUE","FALSE"
-"laurapaquet88@gmail.com","password","Marylou","Dewall","enfant","FALSE","FALSE","TRUE","TRUE","laurapaquet88@gmail.com","TRUE","FALSE"
-"laurapaquet88@gmail.com","password","Rosie","Dewall","enfant","FALSE","FALSE","TRUE","TRUE","laurapaquet88@gmail.com","TRUE","FALSE"
-"lvandentorren@gmail.com","password","Céline","Vandentorren","amis","FALSE","TRUE","TRUE","FALSE","lvandentorren@gmail.com","TRUE","FALSE"
-"lvandentorren@gmail.com","password","Laurent","Vandentorren","amis","FALSE","TRUE","TRUE","FALSE","lvandentorren@gmail.com","TRUE","FALSE"
-"m.dumery443@laposte.net","password","Marie-France","Dumery","famille cams","FALSE","FALSE","TRUE","FALSE","m.dumery443@laposte.net","TRUE","FALSE"
-"maguy.durez@gmail.com","password","Jm","durez","famille charles","FALSE","FALSE","FALSE","FALSE","maguy.durez@gmail.com","TRUE","FALSE"
-"maguy.durez@gmail.com","password","Maggy","durez","famille charles","FALSE","FALSE","FALSE","FALSE","maguy.durez@gmail.com","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Elisa","Timermann","enfant","FALSE","FALSE","TRUE","TRUE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Ivan","Timermann","famille cams","FALSE","TRUE","TRUE","FALSE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Jean","Timermann","enfant","FALSE","FALSE","TRUE","TRUE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Marion","Timermann","famille cams","TRUE","TRUE","TRUE","FALSE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Matéo","Timermann","enfant","FALSE","FALSE","TRUE","TRUE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"marion.timmerman83@laposte.net","password","Nathan","Timermann","enfant","FALSE","FALSE","TRUE","TRUE","marion.timmerman83@laposte.net","TRUE","FALSE"
-"mathilde.noppe@gmail.com","password","Adrien","noppe","famille charles","FALSE","TRUE","TRUE","FALSE","mathilde.noppe@gmail.com","TRUE","TRUE"
-"mathilde.noppe@gmail.com","password","Augustin","noppe","enfant","FALSE","FALSE","TRUE","TRUE","mathilde.noppe@gmail.com","TRUE","TRUE"
-"mathilde.noppe@gmail.com","password","Math","noppe","famille charles","FALSE","TRUE","TRUE","FALSE","mathilde.noppe@gmail.com","TRUE","TRUE"
-"maxime.destrun@gmail.com","password","Maxime","destrun","amis","FALSE","TRUE","TRUE","FALSE","maxime.destrun@gmail.com","TRUE","FALSE"
-"megan.varrasse@gmail.com","password","Mégan","Varrasse","famille cams","FALSE","FALSE","FALSE","FALSE","megan.varrasse@gmail.com","TRUE","FALSE"
-"n.matthieu71960@gmail.com","password","Joy","mathieu","famille charles","FALSE","FALSE","TRUE","FALSE","n.matthieu71960@gmail.com","TRUE","FALSE"
-"n.matthieu71960@gmail.com","password","Mathieu","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","n.matthieu71960@gmail.com","TRUE","FALSE"
-"n.matthieu71960@gmail.com","password","Bébé","noppe","enfant","FALSE","FALSE","TRUE","TRUE","n.matthieu71960@gmail.com","TRUE","FALSE"
-"nathalievarrasse@hotmail.fr","password","Nathalie","Varrasse","famille cams","FALSE","FALSE","FALSE","FALSE","nathalievarrasse@hotmail.fr","TRUE","FALSE"
-"nathalievarrasse@hotmail.fr","password","Philippe","Varrasse","famille cams","FALSE","FALSE","FALSE","FALSE","nathalievarrasse@hotmail.fr","TRUE","FALSE"
-"noemie.ferreira@hotmail.com","password","Noémie","Ferreira","amis","FALSE","TRUE","TRUE","FALSE","noemie.ferreira@hotmail.com","TRUE","FALSE"
-"noemie.ferreira@hotmail.com","password","Augustin","hecquet","enfant","FALSE","FALSE","TRUE","TRUE","noemie.ferreira@hotmail.com","TRUE","FALSE"
-"noemie.ferreira@hotmail.com","password","Marceau","hecquet","enfant","FALSE","FALSE","TRUE","TRUE","noemie.ferreira@hotmail.com","TRUE","FALSE"
-"noemie.ferreira@hotmail.com","password","Mathieu","hecquet","amis","FALSE","TRUE","TRUE","FALSE","noemie.ferreira@hotmail.com","TRUE","FALSE"
-"noppe.charles@gmail.com","password","camille","delannoy","famille charles","TRUE","TRUE","TRUE","FALSE","noppe.charles@gmail.com","TRUE","TRUE"
-"noppe.charles@gmail.com","password","Basile","noppe","enfant","FALSE","FALSE","TRUE","TRUE","noppe.charles@gmail.com","TRUE","TRUE"
-"noppe.charles@gmail.com","password","charles","noppe","famille charles","TRUE","TRUE","TRUE","FALSE","noppe.charles@gmail.com","TRUE","TRUE"
-"noppe.charles@gmail.com","password","Gaspard","noppe","enfant","FALSE","FALSE","TRUE","TRUE","noppe.charles@gmail.com","TRUE","TRUE"
-"noppe.cyril@gmail.com","password","Caro","cyril","famille charles","FALSE","FALSE","TRUE","FALSE","noppe.cyril@gmail.com","TRUE","TRUE"
-"noppe.cyril@gmail.com","password","Cyril","noppe","famille charles","TRUE","TRUE","TRUE","FALSE","noppe.cyril@gmail.com","TRUE","TRUE"
-"olivier.opposite@gmail.com","password","Maryline","opposité","famille cams","FALSE","FALSE","TRUE","FALSE","olivier.opposite@gmail.com","TRUE","FALSE"
-"olivier.opposite@gmail.com","password","Olivier","opposité","famille cams","FALSE","FALSE","TRUE","FALSE","olivier.opposite@gmail.com","TRUE","FALSE"
-"opposite.jm@numericable.fr","password","Jean-michel","opposité","famille cams","FALSE","FALSE","TRUE","FALSE","opposite.jm@numericable.fr","TRUE","FALSE"
-"patriciafages0160@gmail.com","password","Paty","Fages","famille cams","FALSE","FALSE","TRUE","FALSE","patriciafages0160@gmail.com","TRUE","FALSE"
-"patriciafages0160@gmail.com","password","Pierre","Fages","famille cams","FALSE","FALSE","TRUE","FALSE","patriciafages0160@gmail.com","TRUE","FALSE"
-"piron.richard@gmail.com","password","Richard","piron","amis","TRUE","TRUE","TRUE","FALSE","piron.richard@gmail.com","TRUE","FALSE"
-"romain.delacroix@gmail.com","password","Aurélie","Delacroix","amis","FALSE","TRUE","TRUE","FALSE","romain.delacroix@gmail.com","TRUE","FALSE"
-"romain.delacroix@gmail.com","password","Calie","Delacroix","enfant","FALSE","FALSE","TRUE","TRUE","romain.delacroix@gmail.com","TRUE","FALSE"
-"romain.delacroix@gmail.com","password","Eden","Delacroix","enfant","FALSE","FALSE","TRUE","TRUE","romain.delacroix@gmail.com","TRUE","FALSE"
-"romain.delacroix@gmail.com","password","Romain","Delacroix","amis","FALSE","TRUE","TRUE","FALSE","romain.delacroix@gmail.com","TRUE","FALSE"
-"sebparisiano34@gmail.com","password","Cécile","opposité","enfant","FALSE","FALSE","FALSE","TRUE","sebparisiano34@gmail.com","TRUE","FALSE"
-"sebparisiano34@gmail.com","password","Jennifer","opposité","famille cams","FALSE","FALSE","FALSE","FALSE","sebparisiano34@gmail.com","TRUE","FALSE"
-"sebparisiano34@gmail.com","password","Sébastien","opposité","famille cams","FALSE","FALSE","FALSE","FALSE","sebparisiano34@gmail.com","TRUE","FALSE"
-"segolene.franc@yahoo.fr","password","Arthur","ségolène","enfant","FALSE","FALSE","FALSE","TRUE","segolene.franc@yahoo.fr","TRUE","FALSE"
-"segolene.franc@yahoo.fr","password","Nicolas","Ségolène","amis","FALSE","FALSE","FALSE","FALSE","segolene.franc@yahoo.fr","TRUE","FALSE"
-"segolene.franc@yahoo.fr","password","Ségolène","Ségolène","amis","FALSE","FALSE","FALSE","FALSE","segolene.franc@yahoo.fr","TRUE","FALSE"
-"steinbachlouise@gmail.com","password","Louise","steinbach","amis","FALSE","TRUE","TRUE","FALSE","steinbachlouise@gmail.com","TRUE","FALSE"
-"noppe.thomas@gmail.com","password","Thomas","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","noppe.thomas@gmail.com","TRUE","FALSE"
-"tiphaine.poitou@hotmail.fr","password","Chloé","Neirinck","enfant","FALSE","FALSE","FALSE","TRUE","tiphaine.poitou@hotmail.fr","TRUE","FALSE"
-"tiphaine.poitou@hotmail.fr","password","Pierre","Neirinck","amis","FALSE","FALSE","FALSE","FALSE","tiphaine.poitou@hotmail.fr","TRUE","FALSE"
-"tiphaine.poitou@hotmail.fr","password","Tiphaine","Neirinck","amis","FALSE","FALSE","FALSE","FALSE","tiphaine.poitou@hotmail.fr","TRUE","FALSE"
-"tullifer.melanie@gmail.com","password","Romuald","Caron","amis","FALSE","TRUE","TRUE","FALSE","tullifer.melanie@gmail.com","TRUE","FALSE"
-"tullifer.melanie@gmail.com","password","Mélanie","Tullifer","amis","FALSE","TRUE","TRUE","FALSE","tullifer.melanie@gmail.com","TRUE","FALSE"
-"valeriedrowart66@gmail.com","password","mec de valère","valère","famille cams","FALSE","FALSE","FALSE","FALSE","valeriedrowart66@gmail.com","TRUE","FALSE"
-"valeriedrowart66@gmail.com","password","Valère","valère","famille cams","FALSE","FALSE","FALSE","FALSE","valeriedrowart66@gmail.com","TRUE","FALSE"
-"vincigo@gmail.com","password","Vincienne","gons","famille charles","FALSE","FALSE","TRUE","FALSE","vincigo@gmail.com","TRUE","FALSE"
-"vincigo@gmail.com","password","Christophe","vincienne","famille charles","FALSE","FALSE","TRUE","FALSE","vincigo@gmail.com","TRUE","FALSE"
-"vincno@gmail.com","password","Vincent","noppe","famille charles","FALSE","FALSE","TRUE","FALSE","vincno@gmail.com","TRUE","FALSE"
-"vincno@gmail.com","password","copine vincent","vincent","famille charles","FALSE","FALSE","TRUE","FALSE","vincno@gmail.com","TRUE","FALSE"
+emailcompte,mdp,first_name,last_name,type,temoin,allowedbefore,allowedrebond,child,email,emailcompteOK?
+albane_1@yahoo.fr,password,Albane,Albane,amis,FALSE,FALSE,FALSE,FALSE,Albane.Albane@test.com,TRUE
+alexandre-peron@outlook.fr,password,Alexandre,Peron,amis,TRUE,TRUE,TRUE,FALSE,alexandre-peron@outlook.fr ,TRUE
+alexandre-peron@outlook.fr,password,Julia,Weiss,amis,FALSE,TRUE,TRUE,FALSE,alexandre-peron@outlook.fr ,TRUE
+amit.bdc@hotmail.fr,password,Amit,Beedassy,amis,FALSE,TRUE,TRUE,FALSE,amit.bdc@hotmail.fr ,TRUE
+amit.bdc@hotmail.fr,password,Mia,Beedassy,enfant,FALSE,FALSE,TRUE,TRUE,amit.bdc@hotmail.fr ,TRUE
+amit.bdc@hotmail.fr,password,Noémie,Beedassy,amis,FALSE,TRUE,TRUE,FALSE,amit.bdc@hotmail.fr ,TRUE
+anais.jouan@hotmail.fr,password,Laurent,Jouan,amis,FALSE,FALSE,FALSE,FALSE,Laurent.Jouan@test.com,TRUE
+anais.jouan@hotmail.fr,password,Anais,Jouan,amis,FALSE,FALSE,FALSE,FALSE,Anais.Jouan@test.com,TRUE
+anais.jouan@hotmail.fr,password,Ruben,Jouan,enfant,FALSE,FALSE,FALSE,TRUE,Ruben.Jouan@test.com,TRUE
+aurelie.baptista.lille@gmail.com,password,Abel,goudeseune,enfant,FALSE,FALSE,TRUE,TRUE,Abel.goudeseune@test.com,TRUE
+aurelie.baptista.lille@gmail.com,password,Aurélie,Goudeseune,amis,FALSE,TRUE,TRUE,FALSE,aurelie.baptista.lille@gmail.com,TRUE
+aurelie.baptista.lille@gmail.com,password,Rémi,Goudeseune,amis,TRUE,TRUE,TRUE,FALSE,Rémi.Goudeseune@test.com,TRUE
+baptiste.fantino@gmail.com,password,Alix,deffieux,amis,FALSE,TRUE,TRUE,FALSE,Alix.deffieux@test.com,TRUE
+baptiste.fantino@gmail.com,password,Baptiste,fantino,amis,FALSE,TRUE,TRUE,FALSE,baptiste.fantino@gmail.com ,TRUE
+bruneau.so@gmail.com,password,Héloise,fofie,enfant,FALSE,FALSE,FALSE,TRUE,Héloise.fofie@test.com,TRUE
+bruneau.so@gmail.com,password,Markus,markus,amis,FALSE,FALSE,FALSE,FALSE,Markus.markus@test.com,TRUE
+bruneau.so@gmail.com,password,Sophie,markus,amis,FALSE,FALSE,FALSE,FALSE,Sophie.markus@test.com,TRUE
+carole.langguth@orange.fr,password,Carole,langguth,famille charles,FALSE,FALSE,TRUE,FALSE,Carole.langguth@test.com,TRUE
+carole.langguth@orange.fr,password,Marc,langguth,famille charles,FALSE,FALSE,TRUE,FALSE,Marc.langguth@test.com,TRUE
+carole.langguth@orange.fr,password,Victor,langguth,famille charles,FALSE,FALSE,TRUE,FALSE,Victor.langguth@test.com,TRUE
+carole.langguth@orange.fr,password,Maxime,langguth,famille charles,FALSE,FALSE,TRUE,FALSE,Maxime.langguth@test.com,TRUE
+carole.langguth@orange.fr,password,Pierre,langguth,famille charles,FALSE,FALSE,TRUE,FALSE,Pierre.langguth@test.com,TRUE
+carpentier.coline@yahoo.com,password,Coline,Carpentier,amis,FALSE,TRUE,TRUE,FALSE,Coline.Carpentier@test.com,TRUE
+carpentier.coline@yahoo.com,password,Bastien,Deleau,amis,FALSE,TRUE,TRUE,FALSE,Bastien.Deleau@test.com,TRUE
+carpentier.coline@yahoo.com,password,Manon,deleau,enfant,FALSE,FALSE,TRUE,TRUE,Manon.deleau@test.com,TRUE
+cathyjulienw@gmail.com,password,Charly,wattel,enfant,FALSE,FALSE,TRUE,TRUE,cathyjulienw@gmail.com,TRUE
+cathyjulienw@gmail.com,password,Julien,Wattel,amis,FALSE,TRUE,TRUE,FALSE,cathyjulienw@gmail.com,TRUE
+cathyjulienw@gmail.com,password,Cathy,Werbrouck,amis,TRUE,TRUE,TRUE,FALSE,cathyjulienw@gmail.com,TRUE
+cedric.delattre@laposte.net,password,Cédric,delattre,famille charles,FALSE,FALSE,FALSE,FALSE,Cédric.delattre@test.com,TRUE
+cedric.delattre@laposte.net,password,Lise,delattre,famille charles,FALSE,FALSE,FALSE,FALSE,Lise.delattre@test.com,TRUE
+cedric.delattre@laposte.net,password,Océane,delattre,enfant,FALSE,FALSE,FALSE,TRUE,Océane.delattre@test.com,TRUE
+charlottefaes@hotmail.fr,password,Charlotte,Farez,amis,FALSE,TRUE,TRUE,FALSE,Charlotte.Farez@test.com,TRUE
+charlottefaes@hotmail.fr,password,Julien,Farez,amis,FALSE,TRUE,TRUE,FALSE,Julien.Farez@test.com,TRUE
+charlottefaes@hotmail.fr,password,Octave,Farez,enfant,FALSE,FALSE,TRUE,TRUE,Octave.Farez@test.com,TRUE
+clemence-n88@hotmail.fr,password,Clémence,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,Clémence.noppe@test.com,TRUE
+coralie_maldonado@hotmail.fr,password,Coralie,Maldonado,amis,FALSE,FALSE,FALSE,FALSE,Coralie.Maldonado@test.com,TRUE
+cyrile.opposite@gmail.com,password,Cyrile,opposité,famille cams,FALSE,FALSE,TRUE,FALSE,Cyrile.opposité@test.com,TRUE
+delannoy.arnaud@free.fr,password,Arnaud,delannoy,famille cams,FALSE,FALSE,TRUE,FALSE,delannoyar@gmail.com ,TRUE
+delannoy.arnaud@free.fr,password,Véronique,delannoy,famille cams,FALSE,FALSE,TRUE,FALSE,Véronique.delannoy@test.com,TRUE
+delannoy.elise@gmail.com,password,élise,delannoy,famille cams,TRUE,TRUE,TRUE,FALSE,delannoy.elise@gmail.com,TRUE
+delphine-del@live.fr,password,Delphine,delattre,famille charles,FALSE,FALSE,FALSE,FALSE,Delphine.delattre@test.com,TRUE
+delphine-del@live.fr,password,Ivon,delphine,famille charles,FALSE,FALSE,FALSE,FALSE,Ivon.delphine@test.com,TRUE
+foucher.marine@gmail.com,password,Marine,Foucher,amis,FALSE,FALSE,FALSE,FALSE,Marine.Foucher@test.com,TRUE
+jeanclaude.delattre@free.fr,password,Christine,delattre,famille charles,FALSE,FALSE,FALSE,FALSE,Christine.delattre@test.com,TRUE
+jeanclaude.delattre@free.fr,password,Jean-Claude,delattre,famille charles,FALSE,FALSE,FALSE,FALSE,Jean-Claude.delattre@test.com,TRUE
+jeanne.drieux@gmail.com,password,Apolline,Drieux,enfant,FALSE,FALSE,TRUE,TRUE,Apolline.Drieux@test.com,TRUE
+jeanne.drieux@gmail.com,password,Jeannette,Drieux,amis,FALSE,FALSE,TRUE,FALSE,Jeannette.Drieux@test.com,TRUE
+jeanne.drieux@gmail.com,password,Antho,jeanne,amis,FALSE,FALSE,TRUE,FALSE,Antho.jeanne@test.com,TRUE
+joelnoppe@gmail.com,password,Joel,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,joelnoppe@gmail.com,TRUE
+joelnoppe@gmail.com,password,Mémé,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,joelnoppe@gmail.com,TRUE
+joelnoppe@gmail.com,password,Sylvie,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,joelnoppe@gmail.com,TRUE
+ju.delannoy@gmail.com,password,Juliette,delannoy,famille cams,TRUE,TRUE,TRUE,FALSE,ju.delannoy@gmail com,TRUE
+ju.delannoy@gmail.com,password,clément,vanderperre,famille cams,FALSE,TRUE,TRUE,FALSE,clement.vanderperre@urba-select.fr,TRUE
+ju.delannoy@gmail.com,password,Gabriel,vanderperre,enfant,FALSE,FALSE,TRUE,TRUE,ju.delannoy@gmail com,TRUE
+jul.chappuy@hotmail.fr,password,Alix,Julie,enfant,FALSE,FALSE,TRUE,TRUE,Alix.Julie@test.com,TRUE
+jul.chappuy@hotmail.fr,password,Corentin,Julie,amis,FALSE,FALSE,TRUE,FALSE,Corentin.Julie@test.com,TRUE
+jul.chappuy@hotmail.fr,password,Julie,Julie,amis,FALSE,TRUE,TRUE,FALSE,Julie.Julie@test.com,TRUE
+laurapaquet88@gmail.com,password,Julien,Dewall,amis,FALSE,TRUE,TRUE,FALSE,Julien.Dewall@test.com,TRUE
+laurapaquet88@gmail.com,password,Laura,Dewall,amis,FALSE,TRUE,TRUE,FALSE,Laura.Dewall@test.com,TRUE
+laurapaquet88@gmail.com,password,Marylou,Dewall,enfant,FALSE,FALSE,TRUE,TRUE,Marylou.Dewall@test.com,TRUE
+laurapaquet88@gmail.com,password,Rosie,Dewall,enfant,FALSE,FALSE,TRUE,TRUE,Rosie.Dewall@test.com,TRUE
+lvandentorren@gmail.com,password,Céline,Vandentorren,amis,FALSE,TRUE,TRUE,FALSE,lvandentorren@gmail.com,TRUE
+lvandentorren@gmail.com,password,Laurent,Vandentorren,amis,FALSE,TRUE,TRUE,FALSE,lvandentorren@gmail.com ,TRUE
+lvandentorren@gmail.com,password,Jeanne,Vandentorren,amis,FALSE,FALSE,FALSE,TRUE,lvandentorren@gmail.com ,TRUE
+m.dumery443@laposte.net,password,Marie-France,Dumery,famille cams,FALSE,FALSE,TRUE,FALSE,Marie-France.Dumery@test.com,TRUE
+maguy.durez@gmail.com,password,Jean-Marc,durez,famille charles,FALSE,FALSE,FALSE,FALSE,Jean-Marc.durez@test.com,TRUE
+maguy.durez@gmail.com,password,Maggy,durez,famille charles,FALSE,FALSE,FALSE,FALSE,Maggy.durez@test.com,TRUE
+marion.timmerman83@laposte.net,password,Elisa,Timermann,enfant,FALSE,FALSE,TRUE,TRUE,Elisa.Timermann@test.com,TRUE
+marion.timmerman83@laposte.net,password,Ivan,Timermann,famille cams,FALSE,TRUE,TRUE,FALSE,Ivan.Timermann@test.com,TRUE
+marion.timmerman83@laposte.net,password,Jean,Timermann,enfant,FALSE,FALSE,TRUE,TRUE,Jean.Timermann@test.com,TRUE
+marion.timmerman83@laposte.net,password,Marion,Timermann,famille cams,TRUE,TRUE,TRUE,FALSE,Marion.Timermann@test.com,TRUE
+marion.timmerman83@laposte.net,password,Matéo,Timermann,enfant,FALSE,FALSE,TRUE,TRUE,Matéo.Timermann@test.com,TRUE
+marion.timmerman83@laposte.net,password,Nathan,Timermann,enfant,FALSE,FALSE,TRUE,TRUE,Nathan.Timermann@test.com,TRUE
+mathilde.noppe@gmail.com,password,Adrien,noppe,famille charles,FALSE,TRUE,TRUE,FALSE,adrien.noppe@gmail.com,TRUE
+mathilde.noppe@gmail.com,password,Augustin,noppe,enfant,FALSE,FALSE,TRUE,TRUE,adrien.noppe@gmail.com,TRUE
+mathilde.noppe@gmail.com,password,Mathilde,noppe,famille charles,FALSE,TRUE,TRUE,FALSE,Mathilde.noppe@test.com,TRUE
+maxime.destrun@gmail.com,password,Maxime,destrun,amis,FALSE,TRUE,TRUE,FALSE,maxime.destrun@gmail.com,TRUE
+megan.varrasse@gmail.com,password,Mégan,Varrasse,famille cams,FALSE,FALSE,FALSE,FALSE,Mégan.Varrasse@test.com,TRUE
+n.matthieu71960@gmail.com,password,Joy,mathieu,famille charles,FALSE,FALSE,TRUE,FALSE,Joy.mathieu@test.com,TRUE
+n.matthieu71960@gmail.com,password,Mathieu,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,Mathieu.noppe@test.com,TRUE
+n.matthieu71960@gmail.com,password,Bébé,noppe,enfant,FALSE,FALSE,TRUE,TRUE,Bébé.noppe@test.com,TRUE
+nathalievarrasse@hotmail.fr,password,Nathalie,Varrasse,famille cams,FALSE,FALSE,FALSE,FALSE,Nathalie.Varrasse@test.com,TRUE
+nathalievarrasse@hotmail.fr,password,Philippe,Varrasse,famille cams,FALSE,FALSE,FALSE,FALSE,Philippe.Varrasse@test.com,TRUE
+noemie.ferreira@hotmail.com,password,Noémie,Ferreira,amis,FALSE,TRUE,TRUE,FALSE,Noémie.Ferreira@test.com,TRUE
+noemie.ferreira@hotmail.com,password,Boyfriend,Ferreira,amis,FALSE,FALSE,FALSE,FALSE,Boyfriend.Ferreira@test.com,TRUE
+noemie.ferreira@hotmail.com,password,Augustin,hecquet,enfant,FALSE,FALSE,TRUE,TRUE,Augustin.hecquet@test.com,TRUE
+noemie.ferreira@hotmail.com,password,Marceau,hecquet,enfant,FALSE,FALSE,TRUE,TRUE,Marceau.hecquet@test.com,TRUE
+noppe.charles@gmail.com,password,camille,delannoy,famille charles,TRUE,TRUE,TRUE,FALSE,camille.delannoy12@gmail.com,TRUE
+noppe.charles@gmail.com,password,Basile,noppe,enfant,FALSE,FALSE,TRUE,TRUE,noppe.charles@gmail.com,TRUE
+noppe.charles@gmail.com,password,charles,noppe,famille charles,TRUE,TRUE,TRUE,FALSE,noppe.charles@gmail.com,TRUE
+noppe.charles@gmail.com,password,Gaspard,noppe,enfant,FALSE,FALSE,TRUE,TRUE,noppe.charles@gmail.com,TRUE
+noppe.cyril@gmail.com,password,Caroline,Bosma,famille charles,FALSE,FALSE,TRUE,FALSE,caroline.bosma@yahoo.fr,TRUE
+noppe.cyril@gmail.com,password,Cyril,noppe,famille charles,TRUE,TRUE,TRUE,FALSE,noppe.cyril@gmail.com,TRUE
+olivier.opposite@gmail.com,password,Maryline,opposité,famille cams,FALSE,FALSE,TRUE,FALSE,olivier.opposite@gmail.com ,TRUE
+olivier.opposite@gmail.com,password,Olivier,opposité,famille cams,FALSE,FALSE,TRUE,FALSE,olivier.opposite@gmail.com ,TRUE
+opposite.j@numericable.fr,password,Jean-michel,opposité,famille cams,FALSE,FALSE,TRUE,FALSE,Jean-michel.opposité@test.com,TRUE
+patriciafages0160@gmail.com,password,Paty,Fages,famille cams,FALSE,FALSE,TRUE,FALSE,Paty.Fages@test.com,TRUE
+patriciafages0160@gmail.com,password,Pierre,Fages,famille cams,FALSE,FALSE,TRUE,FALSE,Pierre.Fages@test.com,TRUE
+piron.richard@gmail.com,password,Richard,piron,amis,TRUE,TRUE,TRUE,FALSE,piron.richard@gmail.com,TRUE
+romain.delacroix@gmail.com,password,Aurélie,Delacroix,amis,FALSE,TRUE,TRUE,FALSE,Aurélie.Delacroix@test.com,TRUE
+romain.delacroix@gmail.com,password,Calie,Delacroix,enfant,FALSE,FALSE,TRUE,TRUE,Calie.Delacroix@test.com,TRUE
+romain.delacroix@gmail.com,password,Eden,Delacroix,enfant,FALSE,FALSE,TRUE,TRUE,Eden.Delacroix@test.com,TRUE
+romain.delacroix@gmail.com,password,Romain,Delacroix,amis,FALSE,TRUE,TRUE,FALSE,romain.delacroix@gmail.com ,TRUE
+sebparisiano34@gmail.com,password,Cécile,opposité,enfant,FALSE,FALSE,FALSE,TRUE,Cécile.opposité@test.com,TRUE
+sebparisiano34@gmail.com,password,Jennifer,opposité,famille cams,FALSE,FALSE,FALSE,FALSE,Jennifer.opposité@test.com,TRUE
+sebparisiano34@gmail.com,password,Sébastien,opposité,famille cams,FALSE,FALSE,FALSE,FALSE,Sébastien.opposité@test.com,TRUE
+segolene.franc@yahoo.fr,password,Arthur,ségolène,enfant,FALSE,FALSE,FALSE,TRUE,Arthur.ségolène@test.com,TRUE
+segolene.franc@yahoo.fr,password,Nicolas,Ségolène,amis,FALSE,FALSE,FALSE,FALSE,Nicolas.Ségolène@test.com,TRUE
+segolene.franc@yahoo.fr,password,Ségolène,Ségolène,amis,FALSE,FALSE,FALSE,FALSE,Ségolène.Ségolène@test.com,TRUE
+steinbachlouise@gmail.com,password,Louise,steinbach,amis,FALSE,TRUE,TRUE,FALSE,steinbachlouise@gmail.com,TRUE
+steinbachlouise@gmail.com,password,Romain,steinbach,amis,FALSE,TRUE,TRUE,FALSE,steinbachlouise@gmail.com,TRUE
+noppe.thomas@gmail.com,password,Thomas,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,Thomas.noppe@test.com,TRUE
+tiphaine.poitou@hotmail.fr,password,Chloé,Neirinck,enfant,FALSE,FALSE,FALSE,TRUE,Chloé.Neirinck@test.com,TRUE
+tiphaine.poitou@hotmail.fr,password,Pierre,Neirinck,amis,FALSE,FALSE,FALSE,FALSE,Pierre.Neirinck@test.com,TRUE
+tiphaine.poitou@hotmail.fr,password,Tiphaine,Neirinck,amis,FALSE,FALSE,FALSE,FALSE,Tiphaine.Neirinck@test.com,TRUE
+tullifer.melanie@gmail.com,password,Romuald,Caron,amis,FALSE,TRUE,TRUE,FALSE,Romuald.Caron@test.com,TRUE
+tullifer.melanie@gmail.com,password,Mélanie,Tullifer,amis,FALSE,TRUE,TRUE,FALSE,Mélanie.Tullifer@test.com,TRUE
+valeriedrowart66@gmail.com,password,José,valère,famille cams,FALSE,FALSE,FALSE,FALSE,José.valère@test.com,TRUE
+valeriedrowart66@gmail.com,password,Valère,valère,famille cams,FALSE,FALSE,FALSE,FALSE,Valère.valère@test.com,TRUE
+vincigo@gmail.com,password,Vincienne,gons,famille charles,FALSE,FALSE,TRUE,FALSE,Vincienne.gons@test.com,TRUE
+vincigo@gmail.com,password,Christophe,vincienne,famille charles,FALSE,FALSE,TRUE,FALSE,Christophe.vincienne@test.com,TRUE
+vincno@gmail.com,password,Vincent,noppe,famille charles,FALSE,FALSE,TRUE,FALSE,Vincent.noppe@test.com,TRUE
+vincno@gmail.com,password,Florence,vincent,famille charles,FALSE,FALSE,TRUE,FALSE,Florence.vincent@test.com,TRUE
+georges-adrien.carcanis@hotmail.fr,password,Georges,Carcanis,amis,FALSE,TRUE,TRUE,FALSE,,TRUE
+georges-adrien.carcanis@hotmail.fr,password,Camille,Carcanis,amis,FALSE,FALSE,FALSE,FALSE,,TRUE
