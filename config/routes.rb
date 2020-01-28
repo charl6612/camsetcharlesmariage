@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  resources :contacts, only: [:new, :create]
+  resources :contacts, only: [:new, :create, :thanks]
+  get 'contacts/thanks', to: 'contacts#thanks', as: :contacts_thanks
   post 'songs/search', to: 'songs#search', as: :songsearch
   resources :songs, only: [:new, :create, :destroy]
 
