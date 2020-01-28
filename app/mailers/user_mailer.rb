@@ -45,6 +45,12 @@ class UserMailer < ApplicationMailer
       end
   end
 
+  def welcome_email_one(user)
+    #send welcome email to everybody
+    UserMailer.welcome_email(user).deliver_now
+end
+
+
   def email_all
     #send welcome email to everybody
     User.all.each do |user|
