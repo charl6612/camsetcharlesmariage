@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
     @contact.email = @user.email
     if @contact.save
       UserMailer.general_message(@contact).deliver_now
+      flash[:success] = "Message envoyé"
       redirect_to contacts_thanks_path()
     else
       render :new

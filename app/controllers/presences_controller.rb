@@ -42,6 +42,7 @@ class PresencesController < ApplicationController
     @user =  User.find(params[:user_id])
     @presence = Presence.find(params[:id])
     @presence.update(presence_params)
+    flash[:success] = "Présence de #{@invite.first_name} mise à jour"
     redirect_to user_invites_path(current_user)
   end
 
