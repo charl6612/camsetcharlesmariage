@@ -40,7 +40,7 @@
               <% end %>
             <% else %>
               <%= f.input :mariage,label: "Je viens au mariage", as: :radio_buttons, error: 'obligatoire'%>
-              <%= f.input :nuit_samedi, label: "Je dors samedi", as: :radio_buttons, error: 'obligatoire'%>
+              <%= f.input :nuit_samedi, label: "Je dors samedi (lit dortoir ou tente)", as: :radio_buttons, error: 'obligatoire'%>
                             <% if invite.allowedrebond == true %>
                 <%= f.input :rebond, label:  "Je viens dimanche midi", as: :radio_buttons %>
               <% end %>
