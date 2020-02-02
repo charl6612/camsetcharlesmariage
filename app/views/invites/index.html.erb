@@ -1,12 +1,21 @@
-<div class="container">
+<div class="card-home" id="invites">
+  <div class="card-home-body">
+    <div class="card-home-text-bloc">
+      <h1 class="card-home-title">Invités</h1>
+      <div class="content">
+        <p class="card-home-text">
+          Renseignez, pour chaque membre de la famille, les différents moments auxquels ils seront présents.</p>
+      </div>
+      <div class="cards" id="invites">
+        <% @invites.each do |inv| %>
+        <% if inv.presence %>
+        <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
+        <% end %>
+        <% end %>
+      </div>
 
-  <h2>MA TEAM</h2>
-  <div class="cards" id="invites">
-    <% @invites.each do |inv| %>
-    <% if inv.presence %>
-    <%= render 'presences/show', presence: inv.presence, user: inv.user, invite: inv%>
-    <% end %>
-    <% end %>
+    </div>
+
   </div>
 
 </div>

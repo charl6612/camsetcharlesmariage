@@ -1,21 +1,27 @@
-    
-    <div class="container" id="playlist">
-      <h2>MES SONGS</h2>
+<div class="card-home" id="playlist">
+  <div class="card-home-body">
+    <div class="card-home-text-bloc">
+      <h1 class="card-home-title">Ma Playlist</h1>
+    </div>
+
+    <div class="content">
       <ul>
         <% @user.songs.each do |song| %>
-          <li>
-            <%= song.title%>
-            -
-            <%= song.artist%>
-            <% unless song.url.nil?%>
-            <%= link_to " ", "#{song.url}", target: "_blank", class: "btn btn-outline-info btn-sm fas fa-info" %>
-            <% end %>
-                          <%= link_to ' ', song_path(song), method: :delete, class: "btn btn-outline-danger fa fa-trash btn-sm" %>
+        <li>
+          <%= song.title%>
+          -
+          <%= song.artist%>
+          <% unless song.url.nil?%>
+          <%= link_to " ", "#{song.url}", target: "_blank", class: "btn btn-outline-info btn-sm fas fa-info" %>
+          <% end %>
+          <%= link_to ' ', song_path(song), method: :delete, class: "btn btn-outline-danger fa fa-trash btn-sm" %>
 
-          </li>
+        </li>
         <% end %>
-                    <%= link_to 'New', new_song_path(), class: "btn btn-primary"  %>
+        <div class="card-home-text-bloc">
+          <%= link_to 'Nouvelle chanson', new_song_path(), class: "btn btn-outline-primary"  %>
+        </div>
 
       </ul>
-
     </div>
+  </div>

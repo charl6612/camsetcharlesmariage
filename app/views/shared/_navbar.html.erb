@@ -21,7 +21,7 @@
               <%= link_to "Mes photos", user_photos_path(current_user, anchor: "photos"), class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Contact", new_contact_path(), class: "nav-link" %>
+              <%= link_to "Contact", new_contact_path(anchor: "contact"), class: "nav-link" %>
             </li>
             <li class="nav-item">
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
