@@ -20,8 +20,8 @@
                   time:          :horizontal_multi_select
                 } do |f| %>
           <%= f.error_notification %>
-          <%= f.input :mariage,label: "presence mariage (samedi soir)", as: :radio_buttons, error: 'obligatoire' %>
-          <%= f.input :nuit_samedi, label: "presence nuit du samedi(nuit dans le gîte)", as: :radio_buttons, error: 'obligatoire'%>
+          <%= f.input :mariage,label: "presence mariage (samedi soir)", as: :radio_buttons, required: true %>
+          <%= f.input :nuit_samedi, label: "presence nuit du samedi(nuit dans le gîte)", as: :radio_buttons, required: true%>
           <% if @invite.allowedbefore == true %>
           <%= f.input :nuit_jeudi, label:  "presence nuit du jeudi (nuit dans le gîte)", as: :radio_buttons %>
           <%= f.input :nuit_vendredi, label:  "presence nuit du vendredi (nuit dans le gîte)", as: :radio_buttons %>
