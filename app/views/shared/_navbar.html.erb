@@ -9,7 +9,7 @@
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#lemariage">Le mariage</a>
+              <%= link_to "Programme", programme_path(anchor: "programme"), class: "nav-link" %>
             </li>
             <li class="nav-item">
               <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "nav-link" %>

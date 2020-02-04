@@ -11,4 +11,8 @@ class PagesController < ApplicationController
     @carousels = JSON.parse(carousel_serialized)["resources"]
   end
 
+  def programme
+
+  end
+
 end
