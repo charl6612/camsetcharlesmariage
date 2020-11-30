@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
+  skip_before_action :authenticate_user!, only: [:home, :voyage]
 
   def home
     @markers = {
@@ -13,6 +13,10 @@ class PagesController < ApplicationController
 
   def programme
 
+  end
+
+  def voyage
+    @disable_nav = true
   end
 
 end
