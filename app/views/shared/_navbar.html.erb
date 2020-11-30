@@ -24,6 +24,9 @@
               <%= link_to "Contact", new_contact_path(anchor: "contact"), class: "nav-link" %>
             </li>
             <li class="nav-item">
+              <%= link_to "voyage", voyage_path(anchor: "voyage"), class: "nav-link" %>
+            </li>
+            <li class="nav-item">
               <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
           <% else %>
