@@ -20,7 +20,7 @@
                         <%= f.error_notification %>
                   <%= f.input :artist, label: "Artiste" %>
                   <%= f.input :title, label: "Titre" %>
-                  <%= f.button :submit, "Rechercher", class: "btn btn-outline-primary" %>
+                  <%= f.button :submit, "Rechercher", class: "btn btn-primary" %>
                 <% end %>
                 <% else %>
                   <%= simple_form_for [@song],
@@ -38,7 +38,7 @@
                         <%= f.error_notification %>
                   <%= f.input :artist, label: "Artiste" %>
                   <%= f.input :title, label: "Titre" %>
-                  <%= f.button :submit, "Ajouter manuellement", class: "btn btn-outline-primary" %>
+                  <%= f.button :submit, "Ajouter manuellement", class: "btn btn-primary" %>
                 <% end %>
 
                                   <% end %>
