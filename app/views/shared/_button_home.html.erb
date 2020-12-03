@@ -1,9 +1,9 @@
-    <div class="row">
-      <div class="col-12 align-self-center">
+    <div class="row justify-content-center">
+      <div class="col-6 align-self-center">
         <% if current_page?(root_path) %>
-        <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "btn btn-outline-secondary btn-lg" %>
+        <%= link_to 'Je viens !', user_invites_path(current_user, anchor: "invites"), :class => "btn btn-secondary btn-block" %>
       <% else %>
-        <%= link_to 'Accueil', root_path(), :class => "btn btn-outline-secondary btn-lg" %>
+        <%= link_to 'Accueil', root_path(), :class => "btn btn-secondary btn-lg" %>
       </div>
     <% end %>
   </div>
