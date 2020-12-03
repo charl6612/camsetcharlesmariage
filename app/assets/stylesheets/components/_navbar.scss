@@ -1,6 +1,5 @@
 .navbar {
   font-family: montserrat;
-  position: absolute;
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -20,4 +19,8 @@
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transition: 0.3s;
 }
