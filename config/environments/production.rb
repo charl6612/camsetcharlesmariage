@@ -47,7 +47,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  # config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -61,7 +61,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "_consignerie_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "camsetcharlesmariage_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
 
@@ -82,22 +82,6 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-
-  config.action_mailer.default_url_options = { host: "http://camsetcharles.herokuapp.com/" }
-  config.action_mailer.delivery_method = :smtp
-  #   config.action_mailer.mailgun_settings = {
-  #   api_key: ENV['MAILGUN_API_KEY'],
-  #   domain: ENV['MAILGUN_DOMAIN'],
-  # }
-
-  # Mail.defaults do
-  #   delivery_method :smtp, {
-  #     :port      => 587,
-  #     :address   => "smtp.mailgun.org",
-  #     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
-  #     :password  => ENV['MAILGUN_SMTP_PASSWORD'],
-  #   }
-  # end
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)

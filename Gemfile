@@ -8,14 +8,11 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.8'
 gem 'redis'
-gem 'railties', '~> 5.0', '>= 5.0.0.1'
 gem "net-smtp", require: false
-
-gem 'mimemagic'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
-gem 'sassc-rails'
+gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
@@ -29,7 +26,6 @@ gem 'carrierwave'
 gem 'mail_interceptor', group: [:development, :staging]
 gem 'letter_opener', group: :development
 gem 'country_select'
-gem 'rails-i18n'
 # gem 'sendgrid-actionmailer'
 gem "send_grid_mailer"
 # gem "omniauth-rails_csrf_protection"
