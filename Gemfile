@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.2.8'
 gem 'redis'
 gem 'railties', '~> 5.0', '>= 5.0.0.1'
+gem "net-smtp", require: false
 
 gem 'mimemagic'
 
