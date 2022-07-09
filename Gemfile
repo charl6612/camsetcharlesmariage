@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.6.6'
+ruby File.read('.ruby-version').strip
 
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.2.3'
+gem 'rails', '5.2.8'
 gem 'redis'
+gem 'railties', '~> 5.0', '>= 5.0.0.1'
 
 gem 'mimemagic'
 
@@ -44,6 +45,7 @@ end
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
+  gem "debug", ">= 1.0.0"
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
