@@ -27,7 +27,7 @@ gem 'mail_interceptor', group: [:development, :staging]
 gem 'letter_opener', group: :development
 gem 'country_select'
 gem 'actionpack'
-gem 'ransack', '~> 2.1'
+gem 'ransack'
 gem 'railties'
 # gem 'sendgrid-actionmailer'
 gem "send_grid_mailer"
