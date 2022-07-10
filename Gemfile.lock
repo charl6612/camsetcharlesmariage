@@ -284,6 +284,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack
   autoprefixer-rails
   bootsnap
   carrierwave
