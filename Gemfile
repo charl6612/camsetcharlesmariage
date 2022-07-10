@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
-gem 'bootsnap'
+gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
@@ -27,10 +27,8 @@ gem 'mail_interceptor', group: [:development, :staging]
 gem 'letter_opener', group: :development
 gem 'country_select'
 gem 'actionpack'
-
-gem 'ransack'
+gem 'ransack', '~> 2.1'
 gem 'railties'
-gem 'activerecord'
 # gem 'sendgrid-actionmailer'
 gem "send_grid_mailer"
 # gem "omniauth-rails_csrf_protection"

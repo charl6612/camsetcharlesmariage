@@ -289,7 +289,6 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack
-  activerecord
   autoprefixer-rails
   bootsnap
   carrierwave
