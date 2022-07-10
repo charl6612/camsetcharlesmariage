@@ -289,6 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack
+  activerecord
   autoprefixer-rails
   bootsnap
   carrierwave
@@ -313,7 +314,8 @@ DEPENDENCIES
   psych (< 4)
   puma
   rails (= 5.2.8)
-  ransack (~> 2.1)
+  railties
+  ransack
   redis
   sass-rails
   send_grid_mailer
