@@ -313,6 +313,7 @@ DEPENDENCIES
   psych (< 4)
   puma
   rails (= 5.2.8)
+  railties
   ransack (~> 2.1)
   redis
   sass-rails
