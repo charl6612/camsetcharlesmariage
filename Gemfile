@@ -28,6 +28,7 @@ gem 'letter_opener', group: :development
 gem 'country_select'
 gem 'actionpack'
 gem 'ransack', '~> 2.1'
+gem 'railties'
 # gem 'sendgrid-actionmailer'
 gem "send_grid_mailer"
 # gem "omniauth-rails_csrf_protection"
