@@ -1,16 +1,29 @@
 {
   "name": "camsetcharlesmariage",
-  "private": true,
-  "dependencies": {
-    "@rails/webpacker": "^4.0.7",
-    "bootstrap": "^4.3.1",
-    "gmaps": "^0.4.24",
-    "jquery": "^3.5.1",
-    "node-sass": "^7.0.0",
-    "popper.js": "^1.15.0",
-    "puma": "^4.0.0"
+  "version": "1.0.0",
+  "description": "Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.7.2"
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charl6612/camsetcharlesmariage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charl6612/camsetcharlesmariage/issues"
+  },
+  "homepage": "https://github.com/charl6612/camsetcharlesmariage#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }
