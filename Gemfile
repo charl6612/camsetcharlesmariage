@@ -27,6 +27,7 @@ gem 'mail_interceptor', group: [:development, :staging]
 gem 'letter_opener', group: :development
 gem 'country_select'
 gem 'actionpack'
+
 gem 'ransack'
 gem 'railties'
 gem 'activerecord'
