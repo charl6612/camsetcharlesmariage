@@ -25,18 +25,18 @@
           <div class="card-details">
             <% if invite.allowedbefore == true %>
               <div class="bloc2">
-                <%= f.input :nuit_jeudi, label:  "Je suis là jeudi", as: :radio_buttons %>
-                <%= f.input :nuit_vendredi, label: "Je suis là vendredi", as: :radio_buttons %>
+                <%= f.input :nuit_jeudi, label:  "Je suis là jeudi (gîte)", as: :radio_buttons %>
+                <%= f.input :nuit_vendredi, label: "Je suis là vendredi (gîte)", as: :radio_buttons %>
               </div>
             <% end %>
 
             <div class="bloc1">
             <% if invite.child == true %>
-              <%= f.input :samedi_pm,label: "Samedi après-midi", as: :radio_buttons, required: true%>
+              <%= f.input :samedi_pm,label: "Mariage (samedi après-midi)", as: :radio_buttons, required: true%>
               <%= f.input :mariage,label: "Soirée mariage (t'es sûr ?)", as: :radio_buttons, required: true%>
               <%= f.input :nuit_samedi, label: "Nuit du samedi (non vraiment ?)", as: :radio_buttons, required: true%>
                             <% if invite.allowedrebond == true %>
-                <%= f.input :rebond, label:  "Dimanche midi", as: :radio_buttons %>
+                <%= f.input :rebond, label:  "Dimanche midi (rebond)", as: :radio_buttons %>
               <% end %>
             <% else %>
               <%= f.input :mariage,label: "Je viens au mariage", as: :radio_buttons, required: true%>
